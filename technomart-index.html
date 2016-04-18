@@ -10,7 +10,7 @@
 <header class="main-header">
     <div class="container">
         <div class="header-top-content">
-            <h1>Техномарт</h1>
+            <span>Техномарт</span>
 
             <form>
                 <label>Поиск<input type="text" name="find"></label>
@@ -63,8 +63,17 @@
             <h2>Перфораторы</h2>
             <span>Настроящие мужские игрушки</span>
             <label class="promo-arrow">
-                <input type="radio" name="switch-promo" value="left">
-                <input type="radio" name="switch-promo" value="right">
+                <label><input type="radio" name="switch-promo" value="left"></label>
+                <label><input type="radio" name="switch-promo" value="right"></label>
+            </label>
+            <a href="#">Открыть каталог</a>
+        </section>
+        <section class="big-promo">
+            <h2>Дрели</h2>
+            <span>Соседям на радость!</span>
+            <label class="promo-arrow">
+                <label><input type="radio" name="switch-promo" value="left"></label>
+                <label><input type="radio" name="switch-promo" value="right"></label>
             </label>
             <a href="#">Открыть каталог</a>
         </section>
@@ -116,30 +125,30 @@
                 <a href="#">Все производители</a>
             </div>
             <div class="popular-manufacturers-promo">
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="Bosch" width="100" height="30">
-                </article>
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="Makita" width="100" height="30">
-                </article>
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="DeWalt" width="100" height="30">
-                </article>
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="Интерскол" width="100" height="30">
-                </article>
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="Hitachi" width="100" height="30">
-                </article>
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="LG" width="100" height="30">
-                </article>
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="AEG" width="100" height="30">
-                </article>
-                <article class="manufacturer-promo-block">
-                    <img href="#" alt="Metabo" width="100" height="30">
-                </article>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="Bosch" width="100" height="30"></a>
+                </div>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="Makita" width="100" height="30"></a>
+                </div>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="DeWalt" width="100" height="30"></a>
+                </div>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="Интерскол" width="100" height="30"></a>
+                </div>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="Hitachi" width="100" height="30"></a>
+                </div>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="LG" width="100" height="30"></a>
+                </div>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="AEG" width="100" height="30"></a>
+                </div>
+                <div class="manufacturer-promo-block">
+                    <a href="#"><img href="#" alt="Metabo" width="100" height="30"></a>
+                </div>
             </div>
         </section>
     </div>
@@ -148,19 +157,36 @@
 
         <p>Хороший интернет-магазин отличается от плохого не только ценами! Мы стараемся изо всех сил, чтобы сделать
             ваши покупки приятными.</p>
-        <ul>
-            <li>
-                Доставка
-                <div class="delivery-layer">
-                    <h2>Доставка</h2>
 
-                    <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно!
-                        Ведь мы неплохо заработаем, поднимая его на ваш этаж!</p>
-                </div>
-            </li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
-        </ul>
+        <div class="services-list">
+            <ul>
+                <li>Доставка</li>
+                <li>Гарантия</li>
+                <li>Кредит</li>
+            </ul>
+            <div class="services-description">
+                <h2>Доставка</h2>
+
+                <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                    заработаем, поднимая его на ваш этаж!</p>
+                <img src="img/delivery.png" alt="Delivery">
+            </div>
+            <div class="services-description">
+                <h2>Гарантия</h2>
+
+                <p>Если купленный товар поломается или заискрит, а также в случае пожара, спровоцированного его
+                    возгоранием вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                    Дом уж восстановите как-нибудь сами.</p>
+                <img src="img/garanty.png" alt="Garanty">
+            </div>
+            <div class="services-description">
+                <h2>Кредит</h2>
+
+                <p>Залезть в долговую яму стало проще! Кредитные консультанты прийдут вам на помощь.</p>
+                <a href="#">Отправить заявку</a>
+                <img src="img/garanty.png" alt="Garanty">
+            </div>
+        </div>
     </section>
     <section class="info">
         <div class="delivery-info">
@@ -171,52 +197,62 @@
 
             <p>Мы можем доставить ваш товар в самые удаленные точк России! Техномарт работает со многими транспортными
                 компаниями:</p>
-            <ol>
+            <ul>
                 <li>Деловые линии</li>
                 <li>Автотрейдинг</li>
                 <li>ЖелДорЭкспедиция</li>
-            </ol>
+            </ul>
             <a class="red-button" href="#">Подробнее о компании</a>
         </div>
         <div class="contacts">
             <h2>Контакты</h2>
 
             <p>Вы можетезабрать товар сами, заехва в наш офис:</p>
-            <img src="img/map.png" width="150" height="80">
+            <a href="#"><img src="img/map.png" width="150" height="80"></a>
             <a class="red-button" href="#">Заблудились? Напишите нам!</a>
         </div>
     </section>
 </main>
 <footer>
     <section class="footer-block-top">
-        г.Санкт-Петербург, ул.Б.Конюшенная,д19/8<br>
-        +7(812)555-05-55
-        <ul class="footer-top">
-            <li>Компания</li>
-            <li>Новости</li>
-            <li>Каталог</li>
-            <li>Доставка</li>
-            <li>Контакты</li>
-        </ul>
-        <ul class="footer-bottom">
-            <li>Материалы</li>
-            <li>Техника</li>
-            <li>Инструмент</li>
-            <li>Спецпредложения</li>
-        </ul>
+        <div class="footer-address">
+            <h2>ТЕХНОМАРТ</h2>
+            г.Санкт-Петербург, ул.Б.Конюшенная,д19/8<br>
+            +7(812)555-05-55
+        </div>
+        <div class="footer-menu">
+            <ul class="footer-top">
+                <li><a href="#">Компания</a></li>
+                <li><a href="#">Новости</a></li>
+                <li><a href="#">Каталог</a></li>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <ul class="footer-bottom">
+                <li><a href="#">Материалы</a></li>
+                <li><a href="#">Техника</a></li>
+                <li><a href="#">Инструмент</a></li>
+                <li><a href="#">Спецпредложения</a></li>
+            </ul>
+        </div>
     </section>
     <section class="footer-block-bottom">
-        © 2010-2016 Компания "Техномарт"<br>
-        Все права защищены
+        <p>© 2010-2016 Компания "Техномарт"
+            Все права защищены</p>
+
         <div class="social">
-            <img src="img/vk" width="30" height="30">
-            <img src="img/fb" width="30" height="30">
-            <img src="img/instagram" width="30" height="30">
+           <a href="#"><img src="img/vk" width="30" height="30"></a>
+            <a href="#"> <img src="img/fb" width="30" height="30"></a>
+            <a href="#"><img src="img/instagram" width="30" height="30"></a>
         </div>
-        Обратная связь:<br>
-        <span>mail@htmlacademy.ru</span>
-        Разработано -<br>
-        <span>htmlacademy.ru</span>
+        <div class="footer-email">
+            Обратная связь:
+            <a href="#">mail@htmlacademy.ru</a>
+        </div>
+        <div class="footer-developed">
+        Разработано -
+        <a href="#">htmlacademy.ru</a>
+        </div>
     </section>
 </footer>
 </body>
