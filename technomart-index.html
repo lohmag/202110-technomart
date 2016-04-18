@@ -10,28 +10,28 @@
 <header class="main-header">
     <div class="container">
         <div class="header-top-content">
-            <a href="#">Техномарт</a>
+            <h1>Техномарт</h1>
             <form>
                 <label>Поиск<input type="text" name="find"></label>
             </form>
-            <a href="#">Закладки: 0</a>
-            <a href="#">Корзина: 0</a>
-            <a class="header-top-btn" href="#">Оформить заказ</a>
+            <div class="cart-block">
+                <a href="#">Закладки: 0</a>
+                <a href="#">Корзина: 0</a>
+                <a class="header-top-btn" href="#">Оформить заказ</a>
+            </div>
         </div>
         <div class="header-middle-content">
-            <section class="left-title">
-                Интеренет магазин стрительных материалов и инструментов для ремонта
-            </section>
+            <h1>Интеренет магазин стрительных материалов и инструментов для ремонта</h1>
             <section class="middle-address">
                 <a href="#">+7(812)555-05-55</a>
                 г.Санкт-Петербург, ул.Б.Конюшенная д.19/8
             </section>
-            <section class="right-login">
+            <div class="right-login">
                 <a href="#">Войти</a>
                 <a href="#">Регистрация</a>
-            </section>
+            </div>
         </div>
-        <div class="header-bottom-content">
+        <nav class="main-navigation">
             <ul>
                 <li><a href="#">Главная</a></li>
                 <li><a href="#">Компания</a></li>
@@ -41,37 +41,37 @@
                 <li><a href="#">Доставка</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-        </div>
+        </nav>
     </div>
 </header>
-<main class="container">
-    <div class="content-index">
-        <a class="materials" href="#">
-        <span>Материалы</span>
-        <span>На любой вкус</span>
+<main>
+    <div class="promo-blocks">
+        <div class="promo yellow" href="#">
+            <b class="promo-header">Материалы</b>
+            <a class="promo-btn" href="#">На любой вкус</a>
+        </div>
+        <a class="promo blue" href="#">
+            <b class="promo-header">Инструменты</b>
+            <a class="promo-btn" href="#">На все случаи</a>
         </a>
-        <a class="materials" href="#">
-            <span>Инструменты</span>
-            <span>На все случаис</span>
+        <a class="promo purple" href="#">
+            <b class="promo-header">Техника</b>
+            <a class="promo-btn" href="#">Для стройки</a>
         </a>
-        <a class="Techics" href="#">
-            <span>Техника</span>
-            <span>Для стройки</span>
-        </a>
-        <section class="promo">
+        <section class="big-promo">
             <h1>Перфораторы</h1>
             <span>Настроящие мужские игрушки</span>
             <button class="btn-left"><img src="img/left.png" alt="left"></button>
             <button class="btn-right"><img src="img/right.png" alt="right"></button>
             <a href="#">Открыть каталог</a>
         </section>
-        <a class="discount" href="#">
-            <span>Скидки 50%</span>
-            <span>На 360 товаров</span>
+        <a class="promo green" href="#">
+            <b class="promo-header">Скидки 50%</b>
+            <a class="promo-btn" href="#">На 360 товаров</a>
         </a>
-        <a class="delivery" href="#">
-            <span>Доставка</span>
-            <span>Бесплатно</span>
+        <a class="promo yellow" href="#">
+            <b class="promo-header">Доставка</b>
+            <a class="promo-btn" href="#">Бесплатно</a>
         </a>
     </div>
 </main>
