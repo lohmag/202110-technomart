@@ -59,14 +59,27 @@
             <b class="promo-header">Техника</b>
             <a class="promo-btn" href="#">Для стройки</a>
         </a>
-        <section class="big-promo">
-            <h2>Перфораторы</h2>
-            <span>Настроящие мужские игрушки</span>
-            <label class="promo-arrow">
-                <label><input type="radio" name="switch-promo" value="left"></label>
-                <label><input type="radio" name="switch-promo" value="right"></label>
-            </label>
-            <a href="#">Открыть каталог</a>
+        <section class="slider">
+            <input id="slider-left" type="radio" name="switch-slider" value="left" hidden>
+            <input id="slider-right" type="radio" name="switch-slider" value="right" hidden>
+            <div class="slider-arrows">
+                <label for="slider-left"></label>
+                <label for="slider-right"></label>
+            </div>
+            <div class="slide slide1">
+                <h2>Перфораторы</h2>
+                <span>Настоящие мужские игрушки</span>
+                <a href="#">Открыть каталог</a>
+            </div>
+            <div class="slide slide2">
+                <h2>Дрели</h2>
+                <span>Соседям на радость!</span>
+                <a href="#">Открыть каталог</a>
+            </div>
+            <div class="slider-controls">
+                <label for="slider-left"></label>
+                <label for="slider-right"></label>
+            </div>
         </section>
         <section class="big-promo">
             <h2>Дрели</h2>
@@ -113,7 +126,7 @@
                 </article>
                 <article class="item-promo-block">
                     <img src="img/BFG2000" alt="Bosch BFG 2000" width="100" height="60">
-                    <img src="img/new-logo.png" alt="new" width="40" height="40">
+                    <div class="new-logo"></div>
                     <b>Перфоратор BOSCH BFG 2000</b>
                     <a class="promo-block-price" href="#">12500 Р.</a>
                 </article>
