@@ -10,10 +10,10 @@
 <header class="main-header">
     <div class="container">
         <div class="header-top-content">
-            <span>Техномарт</span>
+            <a href="#">Техномарт</a>
 
             <form>
-                <label>Поиск<input type="text" name="find"></label>
+                <input type="search" name="find" placeholder="Поиск">
             </form>
             <div class="cart-block">
                 <a href="#">Закладки: 0</a>
@@ -51,14 +51,14 @@
             <b class="promo-header">Материалы</b>
             <a class="promo-btn" href="#">На любой вкус</a>
         </div>
-        <a class="promo blue" href="#">
+        <div class="promo blue" href="#">
             <b class="promo-header">Инструменты</b>
             <a class="promo-btn" href="#">На все случаи</a>
-        </a>
-        <a class="promo purple" href="#">
+        </div>
+        <div class="promo purple" href="#">
             <b class="promo-header">Техника</b>
             <a class="promo-btn" href="#">Для стройки</a>
-        </a>
+        </div>
         <section class="slider">
             <input id="slider-left" type="radio" name="switch-slider" value="left" hidden>
             <input id="slider-right" type="radio" name="switch-slider" value="right" hidden>
@@ -81,23 +81,14 @@
                 <label for="slider-right"></label>
             </div>
         </section>
-        <section class="big-promo">
-            <h2>Дрели</h2>
-            <span>Соседям на радость!</span>
-            <label class="promo-arrow">
-                <label><input type="radio" name="switch-promo" value="left"></label>
-                <label><input type="radio" name="switch-promo" value="right"></label>
-            </label>
-            <a href="#">Открыть каталог</a>
-        </section>
-        <a class="promo green" href="#">
+        <div class="promo green" href="#">
             <b class="promo-header">Скидки 50%</b>
             <a class="promo-btn" href="#">На 360 товаров</a>
-        </a>
-        <a class="promo yellow" href="#">
+        </div>
+        <div class="promo yellow" href="#">
             <b class="promo-header">Доставка</b>
             <a class="promo-btn" href="#">Бесплатно</a>
-        </a>
+        </div>
     </div>
     <div class="promo-catalog">
         <section class="popular-items">
@@ -182,7 +173,6 @@
 
                 <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
                     заработаем, поднимая его на ваш этаж!</p>
-                <img src="img/delivery.png" alt="Delivery">
             </div>
             <div class="services-description">
                 <h2>Гарантия</h2>
@@ -190,14 +180,12 @@
                 <p>Если купленный товар поломается или заискрит, а также в случае пожара, спровоцированного его
                     возгоранием вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
                     Дом уж восстановите как-нибудь сами.</p>
-                <img src="img/garanty.png" alt="Garanty">
             </div>
             <div class="services-description">
                 <h2>Кредит</h2>
 
                 <p>Залезть в долговую яму стало проще! Кредитные консультанты прийдут вам на помощь.</p>
                 <a href="#">Отправить заявку</a>
-                <img src="img/garanty.png" alt="Garanty">
             </div>
         </div>
     </section>
@@ -229,7 +217,7 @@
 <footer>
     <section class="footer-block-top">
         <div class="footer-address">
-            <h2>ТЕХНОМАРТ</h2>
+            <a href="#">ТЕХНОМАРТ</a>
             г.Санкт-Петербург, ул.Б.Конюшенная,д19/8<br>
             +7(812)555-05-55
         </div>
@@ -250,8 +238,8 @@
         </div>
     </section>
     <section class="footer-block-bottom">
-        <p>© 2010-2016 Компания "Техномарт"
-            Все права защищены</p>
+        <div>© 2010-2016 Компания "Техномарт"
+            Все права защищены</div>
 
         <div class="social">
            <a href="#"><img src="img/vk" width="30" height="30"></a>
@@ -263,7 +251,7 @@
             <a href="#">mail@htmlacademy.ru</a>
         </div>
         <div class="footer-developed">
-        Разработано -
+        <span>Разработано -</span>
         <a href="#">htmlacademy.ru</a>
         </div>
     </section>
