@@ -1,0 +1,21 @@
+body {
+    font-size: 13px;
+    line-height: 24px;
+    font-name: PT Sans Regular;
+}
+.header-top-content {
+    font-size: 17px;
+    line-height: 18px;
+    font-name: Cuprum Regular;
+}
+.logo {
+    font-size: 24px;
+    line-height: 24px;
+    background-color: #ee3643;
+}
+.header-middle-content h1 {
+    font-size: 16px;
+    font-height: 23px;
+    font-name: Cuprum Italic;
+    color: #ee3643;
+}
