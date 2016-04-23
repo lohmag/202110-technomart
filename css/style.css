@@ -1,21 +1,80 @@
+html {
+    margin: 0;
+    padding: 0;
+}
 body {
+    width: 100%;
     font-size: 13px;
     line-height: 24px;
-    font-name: PT Sans Regular;
+    font-family: 'PT Sans Regular', 'Tahoma', sans-serif;
+    padding: 0;
 }
+.main-header {
+    width: 100%;
+    min-height: 320px;
+    background-color: #f1f5f7;
+    font-family: 'Cuprum Regular', 'Tahoma', sans-serif;
+}
+.header-top-row {
+    background-color: #293449;
+}
+.container {
+    width: 940px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .header-top-content {
     font-size: 17px;
     line-height: 18px;
-    font-name: Cuprum Regular;
 }
 .logo {
+    display: inline-block;
+    width: 220px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     font-size: 24px;
     line-height: 24px;
     background-color: #ee3643;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    text-align: center;
 }
+.search {
+    margin-left:  18px;
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    width: 200px;
+    background-color: #293449;
+}
+.cart-block {
+    display: inline-block;
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+.cart-block a {
+    text-decoration: none;
+    color: white;
+}
+.header-top-btn {
+    padding: 8px;
+    background-color: #63a63e;
+}
+
+
+
+
 .header-middle-content h1 {
     font-size: 16px;
-    font-height: 23px;
-    font-name: Cuprum Italic;
+    line-height: 23px;
+    font-family: 'Cuprum Italic', 'Tahoma', sans-serif;
     color: #ee3643;
+}
+.main-navigation {
+    background-color: #32425c;
+}
+.main-navigation li {
+    display: inline;
 }
