@@ -6,14 +6,16 @@ body {
     width: 100%;
     font-size: 13px;
     line-height: 24px;
-    font-family: 'PT Sans Regular', 'Tahoma', sans-serif;
+    font-family: 'PT Sans', 'Tahoma', sans-serif;
+    font-style: normal;
     padding: 0;
 }
 .main-header {
     width: 100%;
     min-height: 320px;
     background-color: #f1f5f7;
-    font-family: 'Cuprum Regular', 'Tahoma', sans-serif;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-style: normal;
 }
 .header-top-row {
     background-color: #293449;
@@ -66,7 +68,8 @@ body {
 .header-middle-content h1 {
     font-size: 16px;
     line-height: 23px;
-    font-family: 'Cuprum Italic', 'Tahoma', sans-serif;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-style: italic;
     color: #ee3643;
 }
 .main-navigation {
