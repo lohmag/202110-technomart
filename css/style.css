@@ -131,3 +131,8 @@ ul {
     color: white;
     text-decoration: none;
 }
+
+.promo-blocks {
+    float: left;
+    width: 300px;
+}
