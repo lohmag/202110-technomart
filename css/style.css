@@ -133,6 +133,114 @@ ul {
 }
 
 .promo-blocks {
+
+}
+.promo {
+    float:left;
+    width: 250px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding: 25px;
+}
+.promo:nth-child(n+3) {
+    margin-right: 0;
+}
+.promo-header {
+    display: block;
+    margin-bottom: 15px;
+    color: white;
+}
+.promo-btn{
+    padding: 14px 24px;
+    background-color: #dda028;
+    color: white;
+    text-decoration: none;
+}
+.yellow {
+    background-color: #f6b22d;
+}
+.blue {
+    background-color: #4aafde;
+}
+.purple {
+    background-color: #cc79d1;
+}
+.green {
+    background-color: #85d179;
+}
+.slider {
+    float:left;
+    width: 620px;
+    margin-right: 20px;
+    outline: 1px solid black;
+}
+.popular-header {
+    margin-bottom: 20px;
+    padding: 25px 24px;
+    background-color: #f7f3ec;
+}
+.popular-header h2 {
     float: left;
-    width: 300px;
+    margin: 0;
+    vertical-align: middle;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    color: #32425c;
+}
+.popular-header a {
+    float: right;
+    width: 143px;
+    padding: 14px 55px;
+    background-color: #ee3643;
+    color: white;
+    text-decoration: none;
+}
+.item-promo-block {
+    float: left;
+    width: 186px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-top: 47px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
+.item-promo-block:last-child {
+    margin-right: 0;
+}
+.item-promo-block b {
+    display: block;
+    margin-bottom: 18px;
+}
+.price-deleted {
+    display: block;
+    margin-bottom: 13px;
+    text-decoration: line-through;
+    color: #999999;
+}
+.promo-block-price {
+    display: block;
+    padding: 13px 36px;
+    background-color: #ee3643;
+    color: white;
+    text-decoration: none;
+}
+.manufacturer-promo-block {
+    float: left;
+    width: 218px;
+    padding-top: 58px;
+    padding-bottom: 58px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    text-align: center;
+}
+.manufacturer-promo-block:nth-child(4n) {
+    margin-right: 0;
+}
+.manufacturer-promo-block a {
+    display: block;
 }
