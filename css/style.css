@@ -3,16 +3,17 @@ html {
     padding: 0;
 }
 body {
-    width: 100%;
     font-size: 13px;
     line-height: 24px;
     font-family: 'PT Sans', 'Tahoma', sans-serif;
     font-style: normal;
-    padding: 0;
+}
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: table;
 }
 .main-header {
-    width: 100%;
-    min-height: 320px;
     background-color: #f1f5f7;
     font-family: 'Cuprum', 'Tahoma', sans-serif;
     font-style: normal;
@@ -22,19 +23,21 @@ body {
 }
 .container {
     width: 940px;
+    padding: 0 10px;
     margin-left: auto;
     margin-right: auto;
 }
-
 .header-top-content {
+    display: block;
+    width: 100%;
     font-size: 17px;
     line-height: 18px;
+    min-height: 50px;
 }
 .logo {
-    display: inline-block;
+    float: left;
     width: 220px;
-    padding-top: 9px;
-    padding-bottom: 9px;
+    height: 100%;
     font-size: 24px;
     line-height: 24px;
     background-color: #ee3643;
@@ -44,15 +47,15 @@ body {
     text-align: center;
 }
 .search {
+    float: left;
     margin-left:  18px;
-    display: inline-block;
     padding-top: 12px;
     padding-bottom: 12px;
     width: 200px;
     background-color: #293449;
 }
 .cart-block {
-    display: inline-block;
+    float: right;
     padding-top: 12px;
     padding-bottom: 12px;
 }
@@ -64,17 +67,67 @@ body {
     padding: 8px;
     background-color: #63a63e;
 }
-
+.header-middle-content {
+    background-color: #f1f5f7;
+    padding-bottom: 60px;
+}
 .header-middle-content h1 {
+    float: left;
+    width: 300px;
+    margin-top: 46px;
+    margin-right: 20px;
     font-size: 16px;
     line-height: 23px;
     font-family: 'Cuprum', 'Tahoma', sans-serif;
     font-style: italic;
     color: #ee3643;
 }
+.middle-address {
+    float: left;
+    width: 300px;
+    margin-top: 46px;
+    margin-right: 20px;
+}
+.middle-address a {
+    display: block;
+    font-size: 21px;
+    line-height: 18px;
+    color: #e9292a;
+}
+.right-login {
+    float: right;
+    width: 300px;
+    margin-top: 46px;
+    color: black;
+}
+.lk-in {
+    float: left;
+    width: 120px;
+
+}
+.lk-reg {
+    float: right;
+    width: 150px;
+}
 .main-navigation {
+    padding: 22px 50px;
     background-color: #32425c;
+    font-size: 0;
+
+}
+ul {
+    padding: 0;
 }
 .main-navigation li {
-    display: inline;
+    display: inline-block;
+    margin-right: 60px;
+    font-size: 17px;
+    line-height: 17px;
+}
+.main-navigation li:last-child {
+    margin-right: 0;
+}
+.main-navigation a {
+    color: white;
+    text-decoration: none;
 }
