@@ -244,3 +244,82 @@ ul {
 .manufacturer-promo-block a {
     display: block;
 }
+.services {
+    background-color: #f2f6f8;
+}
+.services-promo {
+    margin-bottom: 74px;
+}
+.services-list {
+    background-color: aqua;
+}
+.services-list ul {
+    float: left;
+    width: 240px;
+    margin: 0;
+    margin-right: 70px;
+}
+.services-list li {
+    padding: 22px;
+    list-style: none;
+    outline: 1px solid black;
+}
+.services-description {
+    float: left;
+    width: 300px;
+}
+.hidden {
+    display: none;
+}
+.info {
+    margin-top: 70px;
+    margin-bottom: 60px;
+}
+.delivery-info {
+    float: left;
+    width: 540px;
+}
+.red-button {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 14px 40px;
+    background-color: #ee3643;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.contacts {
+    float: right;
+    width: 300px;
+}
+.footer-block-top {
+    background-color: #32425c;
+}
+.footer-address {
+    display: inline-block;
+    width: 380px;
+    margin-right: 10px;
+}
+.footer-address .red-button {
+    display: inline-block;
+    margin: 0;
+    font-size: 30px;
+    font-style: normal;
+    line-height: 30px;
+}
+.footer-menu {
+    width: 550px;
+    float: right;
+}
+.footer-top {
+    float: right;
+}
+.footer-bottom {
+    float: right;
+}
+.footer-menu li {
+    margin-right: 60px;
+    display: inline;
+    color: white;
+
+}
