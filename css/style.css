@@ -109,11 +109,22 @@ body {
     float: right;
     width: 150px;
 }
+.header-user {
+    float: right;
+    #width: 300px;
+}
+.login-name {
+    display: block;
+    padding: 14px 40px;
+    background-color: white;
+}
+.header-userinfo a{
+    display: inline-block;
+}
 .main-navigation {
     padding: 22px 50px;
     background-color: #32425c;
     font-size: 0;
-
 }
 ul {
     padding: 0;
@@ -131,6 +142,61 @@ ul {
     color: white;
     text-decoration: none;
 }
+.breadcrumbs li {
+    display: inline;
+}
+.breadcrumbs a {
+    text-decoration: none;
+    color: black;
+}
+.item-name {
+    padding: 33px 30px;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: normal;
+    text-transform: uppercase;
+    background-color: #f2f6f8;
+    color: #32425c;
+}
+.filter-form {
+    float: left;
+    width: 220px;
+}
+.filter-form span {
+    display: block;
+    padding: 10px 18px;
+    background-color: #f7f3ec;
+}
+.price-filter h2 {
+    padding: 20px 0;
+}
+.price-range {
+    padding-bottom: 9px;
+    background-color: #f7f3ec;
+    min-height: 80px;
+}
+.price-range label {
+    float: left;
+    padding: 12px 46px;
+}
+.price-range label:last-child {
+    float: right;
+}
+.filter-form-selector {
+
+}
+.filter-form-selector label {
+    display: block;
+}
+.show-button {
+    padding: 9px 33px;
+    margin-top : 74px;
+    border: 1px solid #e5e5e5;
+    background-color: white;
+}
+
+
+
 
 .promo-blocks {
 
@@ -328,5 +394,40 @@ ul {
 }
 .footer-menu a {
     color: white;
+    text-decoration: none;
+}
+.footer-bottom a {
+    color: #ffd180;
+}
+.footer-block-bottom {
+    background-color: #293449;
+    padding: 35px 0;
+    color: white;
+}
+.footer-about {
+    float: left;
+    width: 230px;
+    margin-right: 160px;
+}
+.social {
+    float: left;
+    width: 150px;
+    margin-right: 100px;
+}
+.footer-email {
+    float: left;
+    width: 150px;
+    margin-right: 40px;
+}
+.footer-email a {
+    color: #ffd180;
+    text-decoration: none;
+}
+.footer-developed {
+    float: right;
+    width: 110px;
+}
+.footer-developed a {
+    color: #ffd180;
     text-decoration: none;
 }
