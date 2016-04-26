@@ -294,11 +294,14 @@ ul {
 }
 .footer-block-top {
     background-color: #32425c;
+    padding-bottom: 50px;
 }
 .footer-address {
     display: inline-block;
     width: 380px;
     margin-right: 10px;
+    font-style: normal;
+    color: white;
 }
 .footer-address .red-button {
     display: inline-block;
@@ -313,13 +316,17 @@ ul {
 }
 .footer-top {
     float: right;
+    margin: 42px 0;
 }
 .footer-bottom {
     float: right;
+    margin: 0;
 }
 .footer-menu li {
-    margin-right: 60px;
+    margin-right: 50px;
     display: inline;
+}
+.footer-menu a {
     color: white;
-
+    text-decoration: none;
 }
