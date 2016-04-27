@@ -238,6 +238,9 @@ ul {
     margin-bottom: 20px;
     padding: 25px;
 }
+.promo:nth-child(n+3) {
+    margin-right: 0;
+}
 
 .promo-header {
     display: block;
