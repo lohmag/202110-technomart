@@ -324,15 +324,15 @@ ul {
     text-decoration: none;
     color: black;
 }
-
-.item-promo-block b {
-    display: block;
-    margin-bottom: 15px;
-}
 .promo-img {
     margin: 0;
     min-height: 175px;
 }
+.item-promo-block b {
+    display: block;
+    margin-bottom: 15px;
+}
+
 
 .price-deleted {
     display: block;
@@ -346,6 +346,9 @@ ul {
     background-color: #ee3643;
     color: white;
     text-decoration: none;
+}
+b + .promo-block-price {
+    margin-top: 51px;
 }
 .popular-manufacturers-promo {
     font-size: 0;
