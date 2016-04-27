@@ -56,14 +56,20 @@ body {
 }
 .cart-block {
     float: right;
+    #width: 460px;
     padding-top: 12px;
     padding-bottom: 12px;
 }
 .cart-block a {
+    float: left;
+    width: 134px;
+    padding: 8px;
     text-decoration: none;
     color: white;
 }
 .header-top-btn {
+    float: right;
+    width: 134px;
     padding: 8px;
     background-color: #63a63e;
 }
@@ -118,8 +124,13 @@ body {
     padding: 14px 40px;
     background-color: white;
 }
-.header-userinfo a{
+.header-userinfo {
+    font-size: 0;
+}
+.header-userinfo a {
     display: inline-block;
+    font-size: 16px;
+    line-height: 18px;
 }
 .main-navigation {
     padding: 22px 50px;
@@ -142,8 +153,13 @@ ul {
     color: white;
     text-decoration: none;
 }
+.breadcrumbs {
+    font-size: 0;
+}
 .breadcrumbs li {
     display: inline;
+    font-size: 13px;
+    line-height: 18px
 }
 .breadcrumbs a {
     text-decoration: none;
@@ -205,7 +221,7 @@ ul {
     background-color: #f7f3ec;
 }
 .catalog-cards {
-    float: right;
+
 }
 .catalog-item {
     display: inline-block;
@@ -279,7 +295,6 @@ ul {
 .popular-header h2 {
     float: left;
     margin: 0;
-    vertical-align: middle;
     font-size: 30px;
     line-height: 30px;
     font-weight: normal;
@@ -311,17 +326,18 @@ ul {
 .catalog-cards .item-promo-block:nth-child(3n) {
     margin-right: 0;
 }
+.pagination {
+    font-size: 0;
+}
 .pagination li {
     display: inline;
     margin-right: 10px;
     padding: 10px 11px;
     border: 1px solid #e5e5e5;
+    font-size: 13px;
+    line-height: 18px;
 }
-.pagination li:first-child {
-    background-color: #ee3643;
-    border: none;
-    padding: 10px 12px;
-}
+
 
 .pagination a {
     text-decoration: none;
@@ -434,12 +450,15 @@ b + .promo-block-price {
 .footer-block-top {
     background-color: #32425c;
     padding-bottom: 50px;
+    font-size: 0;
 }
 .footer-address {
     display: inline-block;
     width: 380px;
     margin-right: 10px;
     font-style: normal;
+    font-size: 18px;
+    line-height: 24px;
     color: white;
 }
 .footer-address .red-button {
@@ -452,17 +471,30 @@ b + .promo-block-price {
 .footer-menu {
     width: 550px;
     float: right;
+    font-size: 0;
 }
 .footer-top {
-    float: right;
-    margin: 42px 0;
+    display: inline-block;
+    width: 550px;
+    margin: 0;
+    margin-top: 42px;
+    font-size: 18px;
+    line-height: 24px;
 }
 .footer-bottom {
-    float: right;
+    display: inline-block;
+    width: 550px;
     margin: 0;
+    margin-top: 42px;
+    font-size: 18px;
+    line-height: 24px;
 }
 .footer-menu li {
-    margin-right: 50px;
+    margin-left: 36px;
+    display: inline;
+}
+.footer-menu li:last-child {
+    margin-left: 36px;
     display: inline;
 }
 .footer-menu a {
