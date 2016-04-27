@@ -194,10 +194,40 @@ ul {
     border: 1px solid #e5e5e5;
     background-color: white;
 }
-
-
-
-
+.catalog {
+    float: right;
+    width: 700px;
+    padding-bottom: 60px;
+}
+.sort-rules {
+    margin: 0;
+    margin-bottom: 20px;
+    background-color: #f7f3ec;
+}
+.catalog-cards {
+    float: right;
+}
+.catalog-item {
+    display: inline-block;
+    vertical-align: top;
+    width: 186px;
+    min-height: 320px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    padding-bottom: 20px;
+    border: 1px solid #e5e5e5;
+    font-size: 17px;
+    line-height: 18px;
+}
+.catalog-item:nth-child(3n) {
+    margin-right: 0;
+}
+.catalog-item b {
+    font-size: 18px;
+    line-height: 20px;
+}
 .promo-blocks {
 
 }
@@ -208,9 +238,7 @@ ul {
     margin-bottom: 20px;
     padding: 25px;
 }
-.promo:nth-child(n+3) {
-    margin-right: 0;
-}
+
 .promo-header {
     display: block;
     margin-bottom: 15px;
@@ -266,39 +294,68 @@ ul {
 .item-promo-block {
     float: left;
     width: 186px;
+    min-height: 320px;
     margin-right: 20px;
     margin-bottom: 20px;
-    padding-top: 47px;
     padding-left: 16px;
     padding-right: 16px;
     padding-bottom: 20px;
     border: 1px solid #e5e5e5;
 }
-.item-promo-block:last-child {
+.promo-catalog .item-promo-block:last-child {
     margin-right: 0;
 }
+.catalog-cards .item-promo-block:nth-child(3n) {
+    margin-right: 0;
+}
+.pagination li {
+    display: inline;
+    margin-right: 10px;
+    padding: 10px 11px;
+    border: 1px solid #e5e5e5;
+}
+.pagination li:first-child {
+    background-color: #ee3643;
+    border: none;
+    padding: 10px 12px;
+}
+
+.pagination a {
+    text-decoration: none;
+    color: black;
+}
+
 .item-promo-block b {
     display: block;
-    margin-bottom: 18px;
+    margin-bottom: 15px;
 }
+.promo-img {
+    margin: 0;
+    min-height: 175px;
+}
+
 .price-deleted {
     display: block;
-    margin-bottom: 13px;
+    margin-bottom: 12px;
     text-decoration: line-through;
     color: #999999;
 }
 .promo-block-price {
     display: block;
-    padding: 13px 36px;
+    padding: 12px 36px;
     background-color: #ee3643;
     color: white;
     text-decoration: none;
 }
+.popular-manufacturers-promo {
+    font-size: 0;
+}
 .manufacturer-promo-block {
-    float: left;
+    float:left;
     width: 218px;
-    padding-top: 58px;
-    padding-bottom: 58px;
+    min-height: 145px;
+    padding-top: 21px;
+    padding-bottom: 21px;
     margin-right: 20px;
     margin-bottom: 20px;
     border: 1px solid #e5e5e5;
@@ -308,7 +365,17 @@ ul {
     margin-right: 0;
 }
 .manufacturer-promo-block a {
-    display: block;
+    display: inline-block;
+    vertical-align: bottom;
+    #min-height: 100px;
+}
+
+.item-about {
+    background-color: #f2f6f8;
+    padding: 68px 0;
+}
+.item-about h2 {
+    padding-bottom: 40px;
 }
 .services {
     background-color: #f2f6f8;
