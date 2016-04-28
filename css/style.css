@@ -312,7 +312,6 @@ ul {
 .item-promo-block {
     float: left;
     width: 186px;
-    min-height: 320px;
     margin-right: 20px;
     margin-bottom: 20px;
     padding-left: 16px;
@@ -344,15 +343,22 @@ ul {
     color: black;
 }
 .promo-img {
+    position: relative;
+    display: block;
     margin: 0;
-    min-height: 175px;
+    width: 184px;
+    min-height: 128px;
+}
+.promo-img img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
 }
 .item-promo-block b {
     display: block;
     margin-bottom: 15px;
 }
-
-
 .price-deleted {
     display: block;
     margin-bottom: 12px;
@@ -375,8 +381,6 @@ b + .promo-block-price {
 .manufacturer-promo-block {
     float:left;
     width: 218px;
-    padding-top: 21px;
-    padding-bottom: 21px;
     margin-right: 20px;
     margin-bottom: 20px;
     border: 1px solid #e5e5e5;
@@ -386,11 +390,17 @@ b + .promo-block-price {
     margin-right: 0;
 }
 .manufacturer-promo-block a {
-    display: inline-block;
-    vertical-align: bottom;
-    #min-height: 100px;
+    position: relative;
+    display: block;
+    width: 218px;
+    min-height: 100px;
 }
-
+.manufacturer-promo-block img {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
 .item-about {
     background-color: #f2f6f8;
     padding: 68px 0;
@@ -473,7 +483,7 @@ b + .promo-block-price {
     font-size: 0;
 }
 .footer-top {
-    display: inline-block;
+    display: block;
     width: 550px;
     margin: 0;
     margin-top: 42px;
@@ -481,7 +491,7 @@ b + .promo-block-price {
     line-height: 24px;
 }
 .footer-bottom {
-    display: inline-block;
+    display: block;
     width: 550px;
     margin: 0;
     margin-top: 42px;
