@@ -32,46 +32,106 @@ body {
     width: 100%;
     font-size: 17px;
     line-height: 18px;
-    min-height: 50px;
 }
 .logo {
     float: left;
     width: 220px;
     height: 100%;
+    padding: 8px 0px;
     font-size: 24px;
     line-height: 24px;
     background-color: #ee3643;
+    box-shadow: 0 5px #b52933;
     text-transform: uppercase;
     text-decoration: none;
     color: white;
     text-align: center;
 }
-.search {
+.search input {
+    position: relative;
     float: left;
-    margin-left:  18px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    width: 200px;
+    #margin-left:  18px;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    width: 260px;
     background-color: #293449;
+}
+
+.search:before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 17px;
+    top: 12px;
+    left: 13px;
+    background: transparent url("../img/icon-search.png") no-repeat;
+    opacity: 0.3;
 }
 .cart-block {
     float: right;
-    width: 460px;
-    padding-top: 12px;
-    padding-bottom: 12px;
+    width: 450px;
 }
 .cart-block a {
+    position: relative;
     float: left;
-    width: 134px;
-    padding: 8px;
+    width: 150px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     text-decoration: none;
     color: white;
+    text-align: center;
 }
-.header-top-btn {
+.cart-block a:hover {
+    background-color: #212a3a;
+}
+.cart-block a:active {
+}
+.bookmarks:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 16px;
+    top: 12px;
+    left: 13px;
+    background: transparent url("../img/icon-bookmark.png") no-repeat;
+    opacity: 0.3;
+}
+.bookmarks:hover:before {
+    opacity: 1;
+}
+.bookmarks:hover:active {
+    opacity: 0.3;
+}
+.header-cart:before {
+    position: absolute;
+    content: "";
+    width: 17px;
+    height: 16px;
+    top: 12px;
+    left: 13px;
+    background: transparent url("../img/icon-basket.png") no-repeat;
+    opacity: 0.3;
+}
+.header-cart:hover:before {
+    opacity: 1;
+}
+.header-cart:active {
+    background-color: #161d29;
+    color: #babbbd;
+}
+.cart-block .header-top-btn {
     float: right;
-    width: 134px;
-    padding: 8px;
+    width: 150px;
+    padding-top: 11px;
+    padding-bottom: 11px;
     background-color: #63a63e;
+}
+.cart-block .header-top-btn:hover {
+    background-color: #5fbb2d;
+}
+.cart-block .header-top-btn:active {
+    background-color: #518534;
+    color: #b7c9af;
 }
 .header-middle-content {
     background-color: #f1f5f7;
