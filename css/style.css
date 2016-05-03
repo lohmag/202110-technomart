@@ -1,3 +1,10 @@
+@font-face {
+    font-family: 'symbols-technomart';
+    src: url('../fonts/symbols-technomart.woff') format('woff'),
+         url('../fonts/symbols-technomart.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+}
 html {
     margin: 0;
     padding: 0;
@@ -47,36 +54,76 @@ body {
     color: white;
     text-align: center;
 }
-.search input {
-    position: relative;
+.search {
     float: left;
-    #margin-left:  18px;
-    padding-top: 10px;
-    padding-bottom: 9px;
-    width: 260px;
+}
+.search input {
+    float: right;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 50px;
+    width: 270px;
+    font-size: 17px;
+    line-height: 18px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-style: normal;
+    background: transparent url("../img/.icon-search-opacity30.png") 18px 10px no-repeat;
     background-color: #293449;
+    color: white;
+    border: none;
+}
+.search input::-webkit-input-placeholder {color: white;}
+.search input::-moz-placeholder          {color: white;}/* Firefox 19+ */
+.search input:-moz-placeholder           {color: white;}/* Firefox 18- */
+.search input:-ms-input-placeholder      {color: white;}
+
+.search input:focus::-webkit-input-placeholder {color: transparent}
+.search input:focus::-moz-placeholder          {color: transparent}
+.search input:focus:-moz-placeholder           {color: transparent}
+.search input:focus:-ms-input-placeholder      {color: transparent}
+
+.search input:hover {
+    background: transparent url("../img/.icon-search-opacity100.png") 18px 10px no-repeat;
+    background-color: #212a3a;
+}
+.search input:focus {
+    background: transparent url("../img/.icon-search-red.png") 18px 10px no-repeat;
+    background-color: white;
+    color: black;
 }
 
-.search:before {
-    position: absolute;
-    content: "";
-    width: 17px;
-    height: 17px;
-    top: 12px;
-    left: 13px;
-    background: transparent url("../img/icon-search.png") no-repeat;
-    opacity: 0.3;
-}
 .cart-block {
     float: right;
     width: 450px;
 }
-.cart-block a {
+.bookmarks {
     position: relative;
     float: left;
+    width: 112px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 38px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.header-cart {
+    position: relative;
+    float: left;
+    width: 112px;
+    padding-top: 11px;
+    padding-bottom: 11px;
+    padding-left: 38px;
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.header-top-btn {
+    float: right;
     width: 150px;
     padding-top: 11px;
     padding-bottom: 11px;
+    background-color: #63a63e;
     text-decoration: none;
     color: white;
     text-align: center;
@@ -85,6 +132,8 @@ body {
     background-color: #212a3a;
 }
 .cart-block a:active {
+    background-color: #161d29;
+    color: #babbbd;
 }
 .bookmarks:before {
     position: absolute;
@@ -92,14 +141,14 @@ body {
     width: 14px;
     height: 16px;
     top: 12px;
-    left: 13px;
+    left: 16px;
     background: transparent url("../img/icon-bookmark.png") no-repeat;
     opacity: 0.3;
 }
 .bookmarks:hover:before {
     opacity: 1;
 }
-.bookmarks:hover:active {
+.bookmarks:active:before {
     opacity: 0.3;
 }
 .header-cart:before {
@@ -108,24 +157,17 @@ body {
     width: 17px;
     height: 16px;
     top: 12px;
-    left: 13px;
+    left: 16px;
     background: transparent url("../img/icon-basket.png") no-repeat;
     opacity: 0.3;
 }
 .header-cart:hover:before {
     opacity: 1;
 }
-.header-cart:active {
-    background-color: #161d29;
-    color: #babbbd;
+.header-cart:active:before {
+    opacity: 0.3;
 }
-.cart-block .header-top-btn {
-    float: right;
-    width: 150px;
-    padding-top: 11px;
-    padding-bottom: 11px;
-    background-color: #63a63e;
-}
+
 .cart-block .header-top-btn:hover {
     background-color: #5fbb2d;
 }
