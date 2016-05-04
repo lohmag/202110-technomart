@@ -54,6 +54,14 @@ body {
     color: white;
     text-align: center;
 }
+.logo:hover {
+    background-color: #ca2c37;
+    box-shadow: 0 5px #9a212a;
+}
+.logo:active {
+    background-color: #ba2732;
+    box-shadow: 0 5px #8e1e26;
+}
 .search {
     float: left;
 }
@@ -479,30 +487,94 @@ ul {
     line-height: 20px;
 }
 .promo-blocks {
-
+    margin-top: 60px;
 }
 .promo {
+    position: relative;
     float:left;
     width: 250px;
     margin-right: 20px;
     margin-bottom: 20px;
     padding: 25px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    font-style: normal;
 }
 .promo:nth-child(n+3) {
     margin-right: 0;
 }
-
+.promo:last-child {
+    margin-bottom: 0;
+}
 .promo-header {
     display: block;
     margin-bottom: 15px;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: bold;
     color: white;
 }
-.promo-btn{
-    padding: 14px 24px;
-    background-color: #dda028;
+.materials-icon:after {
+    position: absolute;
+    content: "";
+    background: transparent url("../img/icon-backet.png") no-repeat;
+    width: 44px;
+    height: 65px;
+    top: 30px;
+    right: 43px;
+}
+.instruments-icon:after {
+    position: absolute;
+    content: "";
+    background: transparent url("../img/icon-drel.png") no-repeat;
+    width: 75px;
+    height: 61px;
+    top: 32px;
+    right: 28px;
+}
+.technic-icon:after {
+    position: absolute;
+    content: "";
+    background: transparent url("../img/icon-tractor.png") no-repeat;
+    width: 78px;
+    height: 62px;
+    top: 30px;
+    right: 30px;
+}
+.cart-icon:after {
+    position: absolute;
+    content: "";
+    background: transparent url("../img/icon-cart.png") no-repeat;
+    width: 59px;
+    height: 72px;
+    top: 26px;
+    right: 45px;
+}
+.deliver-icon:after {
+    position: absolute;
+    content: "";
+    background: transparent url("../img/icon-deliver.png") no-repeat;
+    width: 78px;
+    height: 63px;
+    top: 33px;
+    right: 31px;
+}
+.promo-btn {
+    width: 87px;
+    padding: 10px 24px;
     color: white;
+    background-color: rgba(0,0,0,0.1);
     text-decoration: none;
+    font-size: 14px;
+    line-height: 18px;
+    border-radius: 4px;
 }
+.promo-btn:hover {
+    background-color: rgba(0,0,0,0.2);
+}
+.promo-btn:active {
+    background-color: rgba(0,0,0,0.3);
+}
+
 .yellow {
     background-color: #f6b22d;
 }
@@ -522,9 +594,11 @@ ul {
     outline: 1px solid black;
 }
 .popular-header {
+    margin-top: 53px;
     margin-bottom: 20px;
-    padding: 25px 24px;
+    padding: 25px 25px;
     background-color: #f7f3ec;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
 }
 .popular-header h2 {
     float: left;
@@ -537,22 +611,24 @@ ul {
 }
 .popular-header a {
     float: right;
-    width: 143px;
-    padding: 14px 55px;
+    min-width: 143px;
+    padding: 10px 55px;
+    font-size: 14px;
+    line-height: 18px;
     background-color: #ee3643;
     color: white;
     text-decoration: none;
+    border-radius: 4px;
+    text-transform: uppercase;
+    text-align: center;
 }
-.item-promo-block {
-    float: left;
-    width: 186px;
-    margin-right: 20px;
-    margin-bottom: 20px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-bottom: 20px;
-    border: 1px solid #e5e5e5;
+.popular-header a:hover {
+    background-color: #ca2c37;
 }
+.popular-header a:active {
+    background-color: #ba2732;
+}
+
 .promo-catalog .item-promo-block:last-child {
     margin-right: 0;
 }
@@ -576,6 +652,15 @@ ul {
     text-decoration: none;
     color: black;
 }
+.item-promo-block {
+    float: left;
+    width: 186px;
+    #min-height: 320px;
+    padding: 20px 16px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #e5e5e5;
+}
 .promo-img {
     position: relative;
     display: block;
@@ -589,25 +674,41 @@ ul {
     top: 50%;
     transform: translateX(-50%) translateY(-50%);
 }
+
 .item-promo-block b {
     display: block;
-    margin-bottom: 15px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 20px;
 }
 .price-deleted {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 15px;
     text-decoration: line-through;
+    text-align: center;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
     color: #999999;
 }
 .promo-block-price {
     display: block;
     padding: 12px 36px;
-    background-color: #ee3643;
-    color: white;
     text-decoration: none;
+    text-align: center;
+    background-color: #ee3643;
+    border-radius: 4px;
+    font-size: 17px;
+    line-height: 18px;
+    font-weight: bold;
+    color: white;
 }
 b + .promo-block-price {
-    margin-top: 51px;
+    margin-top: 53px;
 }
 .popular-manufacturers-promo {
     font-size: 0;
@@ -627,7 +728,14 @@ b + .promo-block-price {
     position: relative;
     display: block;
     width: 218px;
-    min-height: 100px;
+    min-height: 143px;
+}
+.manufacturer-promo-block a:hover {
+    box-shadow: 0px 8px 28px 4px #a9adb5;
+}
+.manufacturer-promo-block a:active {
+    box-shadow: 1px 4px 11px 4px #a9adb5;
+    opacity: 0.3;
 }
 .manufacturer-promo-block img {
     position: absolute;
