@@ -149,7 +149,7 @@ body {
     opacity: 1;
 }
 .bookmarks:active:before {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 .header-cart:before {
     position: absolute;
@@ -165,7 +165,7 @@ body {
     opacity: 1;
 }
 .header-cart:active:before {
-    opacity: 0.3;
+    opacity: 0.5;
 }
 
 .cart-block .header-top-btn:hover {
@@ -177,13 +177,18 @@ body {
 }
 .header-middle-content {
     background-color: #f1f5f7;
-    padding-bottom: 60px;
+    padding-bottom: 65px;
 }
-.header-middle-content h1 {
+.header-middle {
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-left: 50px;
+}
+.header-middle h1 {
     float: left;
-    width: 300px;
-    margin-top: 46px;
-    margin-right: 20px;
+    margin: 0;
+    width: 200px;
+    margin-right: 70px;
     font-size: 16px;
     line-height: 23px;
     font-family: 'Cuprum', 'Tahoma', sans-serif;
@@ -192,68 +197,195 @@ body {
 }
 .middle-address {
     float: left;
-    width: 300px;
-    margin-top: 46px;
+    width: 270px;
     margin-right: 20px;
 }
 .middle-address a {
+    position: relative;
     display: block;
+    padding: 10px 50px;
     font-size: 21px;
     line-height: 18px;
+    text-decoration: none;
+    font-style: normal;
     color: #e9292a;
+    border: 3px solid white;
+    text-align: center;
+}
+.middle-address a:before {
+    position: absolute;
+    content: "";
+    width: 19px;
+    height: 19px;
+    top: 10px;
+    left: 16px;
+    background: transparent url("../img/icon-telephone.png") no-repeat;
+
+}
+.header-middle-address {
+    display: block;
+    margin-top: 5px;
+    font-size: 14px;
+    line-height: 24px;
+    font-style: normal;
+    text-align: center;
 }
 .right-login {
     float: right;
-    width: 300px;
-    margin-top: 46px;
+    width: 280px;
     color: black;
 }
 .lk-in {
+    position: relative;
     float: left;
-    width: 120px;
-
+    width: 45px;
+    padding: 10px 25px;
+    padding-left: 50px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 21px;
+}
+.lk-in:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 17px;
+    top: 15px;
+    left: 15px;
+    background: transparent url("../img/icon-pass-hover.png") no-repeat;
+    opacity: 0.3;
+}
+.lk-in:hover {
+    color: #ee3643;
+}
+.lk-in:hover:before {
+    opacity: 1;
+}
+.lk-in:active {
+    color: #cacaca;
+}
+.lk-in:active:before {
+    opacity: 0.3;
 }
 .lk-reg {
     float: right;
-    width: 150px;
+    width: 100px;
+    padding: 10px 25px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    text-align: center;
+    font-size: 21px;
+}
+.lk-reg:hover {
+    color: #ee3643;
+}
+.lk-reg:active {
+    color: #cacaca;
 }
 .header-user {
     float: right;
     width: 300px;
 }
 .login-name {
+    position: relative;
     display: block;
-    padding: 14px 40px;
+    padding: 9px 0px;
+    padding-left: 50px;
     background-color: white;
+}
+.login-name a {
+    text-decoration: none;
+    font-size: 21px;
+    font-style: normal;
+    color: black;
+}
+.header-login-name:before {
+    position: absolute;
+    content: "";
+    width: 20px;
+    height: 18px;
+    top: 12px;
+    left: 14px;
+    background: transparent url("../img/icon-login.png") no-repeat;
+    opacity: 0.3;
+}
+
+.header-login-name:hover:before {
+    opacity: 1;
+}
+.header-login-name:active {
+    color: #cacaca;
+}
+.header-login-name:active:before {
+    opacity: 0.3;
+}
+.header-logout {
+    position: absolute;
+    content: "";
+    width: 21px;
+    height: 17px;
+    top: 12px;
+    right: 14px;
+    background: transparent url("../img/icon-logout.png") no-repeat;
+    opacity: 0.3;
+}
+.header-logout:hover {
+    opacity: 1;
+}
+.header-logout:active {
+    opacity: 0.3;
 }
 .header-userinfo {
     font-size: 0;
+    padding-top: 10px;
+    padding-left: 17px;
 }
 .header-userinfo a {
     display: inline-block;
+    margin-right: 30px;
     font-size: 16px;
-    line-height: 18px;
+    line-height: 16px;
+    color: #32425c;
+}
+.header-userinfo a:hover {
+    color: #ee3643;
+}
+.header-userinfo a:active {
+    color: #cacaca;
 }
 .main-navigation {
-    padding: 22px 50px;
+    padding: 0 26px;
     background-color: #32425c;
     font-size: 0;
+    box-shadow: 0 5px #293449;
 }
 ul {
+    margin: 0;
     padding: 0;
 }
 .main-navigation li {
     display: inline-block;
-    margin-right: 60px;
+    margin: 0;
+    padding: 0;
     font-size: 17px;
     line-height: 17px;
 }
-.main-navigation li:last-child {
-    margin-right: 0;
-}
 .main-navigation a {
+    display: block;
+    padding: 19px 30px;
     color: white;
     text-decoration: none;
+}
+
+.main-navigation a:hover {
+    background-color: #293449;
+}
+.main-navigation a:active {
+    background-color: #1d2739;
+    color: #a8abaf;
 }
 .breadcrumbs {
     font-size: 0;
