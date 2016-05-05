@@ -12,6 +12,7 @@
       <div class="container clearfix">
         <div class="header-top-content clearfix">
           <a class="logo" href="#">Техномарт</a>
+
           <form class="search clearfix">
             <input type="search" name="find" placeholder="Поиск">
           </form>
@@ -73,17 +74,19 @@
             <h2>Цена:</h2>
 
             <div class="price-range"></div>
-            <label><input type="text" name="price-min" placeholder="0"></label>
-            -
-            <label><input type="text" name="price-max" placeholder="30000"></label>
+            <div class="price-range-numbers">
+              <input class="price-min" type="text" name="price-min" placeholder="0">
+              <span>&ndash;</span>
+              <input class="price-max" type="text" name="price-max" placeholder="30000">
+            </div>
           </div>
           <fieldset class="filter-form-selector">
             <legend>Производители:</legend>
-            <label><input type="checkbox" name="manufacturers" value="bosch" checked>BOSCH</label>
-            <label><input type="checkbox" name="manufacturers" value="interscol">ИНТЕРСКОЛ</label>
-            <label><input type="checkbox" name="manufacturers" value="makita" checked>MAKITA</label>
-            <label><input type="checkbox" name="manufacturers" value="dewalt">DEWALT</label>
-            <label><input type="checkbox" name="manufacturers" value="hitachi">HITACHI</label>
+            <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="bosch" checked><span class="checkbox-indicator"></span>BOSCH</label>
+            <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="interscol"><span class="checkbox-indicator"></span>ИНТЕРСКОЛ</label>
+            <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="makita" checked><span class="checkbox-indicator"></span>MAKITA</label>
+            <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="dewalt"><span class="checkbox-indicator"></span>DEWALT</label>
+            <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="hitachi"><span class="checkbox-indicator"></span>HITACHI</label>
           </fieldset>
           <fieldset class="filter-form-selector">
             <legend>Питание:</legend>
@@ -235,23 +238,23 @@
             <li class="page-next"><a href="#">Следующая</a></li>
           </ul>
         </div>
-        </section>
-    </div>
-      <section class="item-about">
-        <div class="container">
-          <h2>Пара слов о перфораторах</h2>
-
-          <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
-            кирпиче,
-            бетоне и камне.
-            Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функци
-            дрели,
-            шуруповерта и отбойного молотка.
-            В фссортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и
-            ударная
-            дрель.</p>
-        </div>
       </section>
+    </div>
+    <section class="item-about">
+      <div class="container">
+        <h2>Пара слов о перфораторах</h2>
+
+        <p>Перфоратор - универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в
+          кирпиче,
+          бетоне и камне.
+          Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функци
+          дрели,
+          шуруповерта и отбойного молотка.
+          В фссортиментном ряду есть выбор "трехрежимников": в одном устройстве будут совмещены отбойный молоток и
+          ударная
+          дрель.</p>
+      </div>
+    </section>
   </main>
   <footer>
     <div class="footer-block-top">
