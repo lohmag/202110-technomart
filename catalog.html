@@ -85,7 +85,7 @@
             <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="interscol"><span class="checkbox-indicator"></span>ИНТЕРСКОЛ</label>
             <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="makita" checked><span class="checkbox-indicator"></span>MAKITA</label>
             <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="dewalt"><span class="checkbox-indicator"></span>DEWALT</label>
-            <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="hitachi"><span class="checkbox-indicator"></span>HITACHI</label>
+            <label class="login-checkbox"><input type="checkbox" name="manufacturers" value="hitachi" disabled><span class="checkbox-indicator"></span>HITACHI</label>
           </fieldset>
           <fieldset class="filter-form-selector no-border">
             <legend>Питание:</legend>
@@ -98,18 +98,18 @@
       <section class="catalog clearfix">
         <div class="sort-rules">
           <span>Сортировка:</span>
-          <a class="sort-by-price" href="#">По цене</a>
+          <a class="sort-by-price sort-active-link" href="#">По цене</a>
           <a class="sort-by-type" href="#">По типу</a>
           <a class="sort-by-func" href="#">По функционалу</a>
-          <a class="price-ascend" href="#"></a>
-          <a class="price-discend" href="#"></a>
+          <a class="price-ascend sort-order-active" href="#"></a>
+          <a class="price-discend " href="#"></a>
         </div>
-        <section class="catalog-cards">
+        <section class="catalog-cards clearfix">
           <div class="item-promo-block">
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg3000.jpg" alt="Bosch BFG3000"></figure>
             </div>
@@ -122,8 +122,8 @@
           <div class="item-promo-block">
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg6000.jpg" alt="Bosch BFG6000"></figure>
             </div>
@@ -137,8 +137,8 @@
             <div class="flag flag-new"></div>
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg2000.jpg" alt="Bosch BFG2000"></figure>
             </div>
@@ -150,8 +150,8 @@
           <div class="item-promo-block">
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg3000.jpg" alt="Bosch BFG3000"></figure>
             </div>
@@ -179,8 +179,8 @@
           <div class="item-promo-block">
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg2000.jpg" alt="Bosch BFG2000"></figure>
             </div>
@@ -192,8 +192,8 @@
           <div class="item-promo-block new-logo">
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg3000.jpg" alt="Bosch BFG3000"></figure>
             </div>
@@ -206,8 +206,8 @@
           <div class="item-promo-block">
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg6000.jpg" alt="Bosch BFG6000"></figure>
             </div>
@@ -220,8 +220,8 @@
           <div class="item-promo-block">
             <div class="item-hover">
               <div class="catalog-btn">
-                <a class="item-buy">Купить</a>
-                <a class="item-notes">В закладки</a>
+                <a class="item-buy" href="#">Купить</a>
+                <a class="item-notes" href="#">В закладки</a>
               </div>
               <figure class="promo-img"><img src="img/bfg2000.jpg" alt="Bosch BFG2000"></figure>
             </div>
@@ -233,10 +233,10 @@
         </section>
         <div class="pagination">
           <ul>
-            <li class="page"><a href="#">1</a></li>
-            <li class="page"><a href="#">2</a></li>
-            <li class="page"><a href="#">3</a></li>
-            <li class="page-next"><a href="#">Следующая</a></li>
+            <li><a class="page flag-active-page" href="#">1</a></li>
+            <li><a class="page" href="#">2</a></li>
+            <li><a class="page" href="#">3</a></li>
+            <li><a class="page-next" href="#">Следующая</a></li>
           </ul>
         </div>
       </section>
@@ -261,7 +261,7 @@
     <div class="footer-block-top">
       <div class="container clearfix">
         <address class="footer-address">
-          <a class="red-button" href="#">ТЕХНОМАРТ</a>
+          <a class="logo-bottom" href="#">ТЕХНОМАРТ</a>
 
           <p>г.Санкт-Петербург, ул.Б.Конюшенная,д19/8<br>
             +7(812)555-05-55</p>
@@ -289,9 +289,9 @@
           Все права защищены
         </div>
         <div class="social">
-          <a href="#"><img src="img/vk" width="30" height="30"></a>
-          <a href="#"> <img src="img/fb" width="30" height="30"></a>
-          <a href="#"><img src="img/instagram" width="30" height="30"></a>
+          <a class="vk" href="#"><span class="icon-vk"></span></a>
+          <a class="fb" href="#"><span class="icon-fb"></span></a>
+          <a class="instagram" href="#"><span class="icon-instagram"></span></a>
         </div>
         <div class="footer-email">
           Обратная связь:
