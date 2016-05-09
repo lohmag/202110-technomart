@@ -67,26 +67,26 @@
           <a class="promo-btn technic-icon" href="#">Для стройки</a>
         </div>
         <div class="slider">
-          <input id="slider-left" type="radio" name="switch-slider" value="left" hidden>
-          <input id="slider-right" type="radio" name="switch-slider" value="right" hidden>
+          <input type="radio" id="btn-1" name="toogle" checked>
+          <input type="radio" id="btn-2" name="toogle">
+          <label class="slide-icon-left" for="btn-1"></label>
+          <label class="slide-icon-right" for="btn-2"></label>
 
-          <div class="slider-arrows">
-            <label for="slider-left"></label>
-            <label for="slider-right"></label>
-          </div>
-          <div class="slide slide1">
-            <h2>Перфораторы</h2>
-            <span>Настоящие мужские игрушки</span>
-            <a href="#">Открыть каталог</a>
-          </div>
-          <div class="slide slide2">
-            <h2>Дрели</h2>
-            <span>Соседям на радость!</span>
-            <a href="#">Открыть каталог</a>
-          </div>
           <div class="slider-controls">
-            <label for="slider-left"></label>
-            <label for="slider-right"></label>
+            <label class="slide-radio" for="btn-1"></label>
+            <label class="slide-radio" for="btn-2"></label>
+          </div>
+          <div class="slides">
+            <div class="slide">
+              <h2>Перфораторы</h2>
+              <span>Настоящие мужские игрушки</span>
+              <a href="#">Открыть каталог</a>
+            </div>
+            <div class="slide">
+              <h2>Дрели</h2>
+              <span>Соседям на радость!</span>
+              <a href="#">Открыть каталог</a>
+            </div>
           </div>
         </div>
         <div class="promo green" href="#">
@@ -205,34 +205,39 @@
           ваши покупки приятными.</p>
 
         <div class="services-list clearfix">
+          <input class="services-selector" type="radio" id="selector-1" name="services" checked>
+          <input class="services-selector" type="radio" id="selector-2" name="services">
+          <input class="services-selector" type="radio" id="selector-3" name="services">
           <ul>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Кредит</li>
+            <li><label for="selector-1">Доставка</label></li>
+            <li><label for="selector-2">Гарантия</label></li>
+            <li><label for="selector-3">Кредит</label></li>
           </ul>
-          <div class="services-description">
-            <h2>Доставка</h2>
+          <div class="services-description-block">
+            <div class="services-description services-delivery">
+              <h2>Доставка</h2>
 
-            <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
-              заработаем, поднимая его на ваш этаж!</p>
-          </div>
-          <div class="services-description hidden">
-            <h2>Гарантия</h2>
+              <p>Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы неплохо
+                заработаем, поднимая его на ваш этаж!</p>
+            </div>
+            <div class="services-description services-garanty">
+              <h2>Гарантия</h2>
 
-            <p>Если купленный товар поломается или заискрит, а также в случае пожара, спровоцированного его
-              возгоранием вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
-              Дом уж восстановите как-нибудь сами.</p>
-          </div>
-          <div class="services-description hidden">
-            <h2>Кредит</h2>
+              <p>Если купленный товар поломается или заискрит, а также в случае пожара, спровоцированного его
+                возгоранием вы всегда можете быть уверены в нашей гарантии. Мы обменяем сгоревший товар на новый.
+                Дом уж восстановите как-нибудь сами.</p>
+            </div>
+            <div class="services-description services-credit">
+              <h2>Кредит</h2>
 
-            <p>Залезть в долговую яму стало проще! Кредитные консультанты прийдут вам на помощь.</p>
-            <a href="#">Отправить заявку</a>
+              <p>Залезть в долговую яму стало проще! Кредитные консультанты прийдут вам на помощь.</p>
+              <a href="#">Отправить заявку</a>
+            </div>
           </div>
         </div>
       </div>
     </section>
-    <section class="info clearfix">
+    <section class="info">
       <div class="container clearfix">
         <div class="delivery-info">
           <h2>Компания "ТЕХНОМАРТ"</h2>
@@ -240,7 +245,7 @@
           <p>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и строительства не оставит
             равнодушными любителей сэкономить на гастарбайтерах.</p>
 
-          <p>Мы можем доставить ваш товар в самые удаленные точк России! Техномарт работает со многими транспортными
+          <p>Мы можем доставить ваш товар в самые удаленные точк России!<br> Техномарт работает со многими транспортными
             компаниями:</p>
           <ul>
             <li>Деловые линии</li>
@@ -252,23 +257,29 @@
         <div class="contacts">
           <h2>Контакты</h2>
 
-          <p>Вы можете забрать товар сами, заехав в наш офис:</p>
-          <a href="#"><img src="img/map.jpg" width="150" height="80"></a>
+          <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
+          <a class="map" href="#google-map"><img src="img/map.jpg" width="300" height="158"></a>
           <a class="red-button" href="#">Заблудились? Напишите нам!</a>
+
+          <div class="map-modal-window">
+            <div class="map-window">
+              <button class="map-modal-close" type="button">&#10060;</button>
+              <div id="yandex-map"></div>
+            </div>
+          </div>
         </div>
-      </div>
     </section>
   </main>
   <footer>
     <div class="footer-block-top">
       <div class="container clearfix">
         <address class="footer-address">
-          <a class="red-button" href="#">ТЕХНОМАРТ</a>
+          <a class="logo-bottom" href="#">ТЕХНОМАРТ</a>
 
           <p>г.Санкт-Петербург, ул.Б.Конюшенная,д19/8<br>
             +7(812)555-05-55</p>
         </address>
-        <div class="footer-menu">
+        <div class="footer-menu clearfix">
           <ul class="footer-top">
             <li><a href="#">Компания</a></li>
             <li><a href="#">Новости</a></li>
@@ -291,9 +302,9 @@
           Все права защищены
         </div>
         <div class="social">
-          <a href="#"><img src="img/vk" width="30" height="30"></a>
-          <a href="#"> <img src="img/fb" width="30" height="30"></a>
-          <a href="#"><img src="img/instagram" width="30" height="30"></a>
+          <a class="vk" href="#"></a>
+          <a class="fb" href="#"></a>
+          <a class="instagram" href="#"></a>
         </div>
         <div class="footer-email">
           Обратная связь:
@@ -307,4 +318,5 @@
     </div>
   </footer>
 </body>
+<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JNVtJ1uRqbvZrBU6fujkNA-MoIXlC2xz&width=940&height=450&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
 </html>
