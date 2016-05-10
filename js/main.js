@@ -31,3 +31,7 @@ close_popup_map.addEventListener("click", function (event) {
         popup_map.classList.remove("modal-show");
     }
 );
+
+
+
+
