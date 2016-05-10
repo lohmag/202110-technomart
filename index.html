@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|Cuprum:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Магазин строительного инструмента</title>
@@ -11,7 +12,7 @@
     <div class="header-top-row">
       <div class="container clearfix">
         <div class="header-top-content">
-          <a class="logo" href="#">Техномарт</a>
+          <a class="logo" href="index.html">Техномарт</a>
 
           <form class="search">
             <input type="search" name="find" placeholder="Поиск">
@@ -258,23 +259,42 @@
           <h2>Контакты</h2>
 
           <p>Вы можете забрать товар сами,<br> заехав в наш офис:</p>
-          <a class="map" href="#google-map"><img src="img/map.jpg" width="300" height="158"></a>
-          <a class="red-button" href="#">Заблудились? Напишите нам!</a>
-
+          <a class="small-map" href="#yandex-map"><img src="img/map.jpg" width="300" height="158"></a>
+          <a class="red-button lost" href="#">Заблудились? Напишите нам!</a>
           <div class="map-modal-window">
             <div class="map-window">
-              <button class="map-modal-close" type="button">&#10060;</button>
+              <button class="modal-close map-close" type="button">&#10060;</button>
               <div id="yandex-map"></div>
             </div>
           </div>
+          <div class="writeus-modal-window">
+            <div class="relative-block">
+              <button class="modal-close writeus-close" type="button">&#10060;</button>
+            </div>
+            <fieldset>
+              <div class="writeus-window-container">
+                <label for="client-name">Ваше имя:</label>
+                <label for="client-email">Ваш e-mail:</label>
+                <input type="text" name="client-name" id="client-name" placeholder="Представьтесь, пожалуйста">
+                <input type="email" name="client-email" id="client-email" placeholder="Для отправки ответа">
+                <label for="client-message">Текст письма:</label>
+                <textarea name="client-message" type="text" id="client-message"
+                          placeholder="В свободной форме"></textarea>
+              </div>
+              <div class="writeus-submit-conrainer">
+                <input type="submit" name="Отправить">
+              </div>
+            </fieldset>
+          </div>
         </div>
+      </div>
     </section>
   </main>
   <footer>
     <div class="footer-block-top">
       <div class="container clearfix">
         <address class="footer-address">
-          <a class="logo-bottom" href="#">ТЕХНОМАРТ</a>
+          <a class="logo-bottom" href="index.html">ТЕХНОМАРТ</a>
 
           <p>г.Санкт-Петербург, ул.Б.Конюшенная,д19/8<br>
             +7(812)555-05-55</p>
@@ -318,5 +338,7 @@
     </div>
   </footer>
 </body>
-<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JNVtJ1uRqbvZrBU6fujkNA-MoIXlC2xz&width=940&height=450&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
+<script type="text/javascript" charset="utf-8" async
+        src="https://api-maps.yandex.ru/services/constructor/1.0/js/?sid=JNVtJ1uRqbvZrBU6fujkNA-MoIXlC2xz&width=940&height=450&lang=ru_RU&sourceType=constructor&scroll=true&id=yandex-map"></script>
+<script src="js/main.js"></script>
 </html>

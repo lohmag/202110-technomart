@@ -2,6 +2,8 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
+  <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700|Cuprum:400,700&subset=latin,cyrillic'
+        rel='stylesheet' type='text/css'>
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.css">
   <title>Каталог</title>
@@ -11,7 +13,7 @@
     <div class="header-top-row">
       <div class="container clearfix">
         <div class="header-top-content clearfix">
-          <a class="logo" href="#">Техномарт</a>
+          <a class="logo" href="index.html">Техномарт</a>
 
           <form class="search clearfix">
             <input type="search" name="find" placeholder="Поиск">
@@ -19,7 +21,7 @@
           <div class="cart-block clearfix">
             <a class="bookmarks" href="#">Закладки: 0</a>
             <a class="header-cart" href="#">Корзина: 0</a>
-            <a class="header-top-btn" href="#">Оформить заказ</a>
+            <a class="header-order" href="#">Оформить заказ</a>
           </div>
         </div>
       </div>
@@ -69,13 +71,15 @@
       <aside class="filter-form clearfix">
         <form>
           <span class="filter-form-h">Фильтр</span>
+
           <div class="price-filter clearfix">
             <h2>Цена:</h2>
+
             <div class="range-controls">
               <div class="scale">
                 <div style="width: 80%;" class="bar"></div>
-              <div class="toogle min-toogle"></div>
-              <div class="toogle max-toogle"></div>
+                <div class="toogle min-toogle"></div>
+                <div class="toogle max-toogle"></div>
               </div>
             </div>
             <div class="price-range-numbers">
@@ -242,6 +246,17 @@
               <a class="promo-block-price" href="#">12500 Р.</a>
             </div>
           </div>
+          <div class="incart-modal-window">
+            <div class="relative-block">
+              <button class="modal-close incart-close" type="button">&#10060;</button>
+            </div>
+            <div class="incart-result">
+              <span>Товар добавлен в корзину!</span>
+            </div>
+            <div class="writeus-submit-conrainer">
+              <input type="submit" name="Отправить">
+            </div>
+          </div>
         </section>
         <div class="pagination">
           <ul>
@@ -273,7 +288,7 @@
     <div class="footer-block-top">
       <div class="container clearfix">
         <address class="footer-address">
-          <a class="logo-bottom" href="#">ТЕХНОМАРТ</a>
+          <a class="logo-bottom" href="index.html">ТЕХНОМАРТ</a>
 
           <p>г.Санкт-Петербург, ул.Б.Конюшенная,д19/8<br>
             +7(812)555-05-55</p>

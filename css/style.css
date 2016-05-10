@@ -119,6 +119,23 @@ img {
     text-decoration: none;
     color: white;
     text-align: center;
+    #background-color: #ee3643;
+}
+.bookmarks:before {
+    position: absolute;
+    content: "";
+    width: 14px;
+    height: 16px;
+    top: 12px;
+    left: 16px;
+    background:  url("../img/icon-bookmark.png") no-repeat;
+    opacity: 0.3;
+}
+.bookmarks:hover:before {
+    opacity: 1;
+}
+.bookmarks:active:before {
+    opacity: 0.5;
 }
 .header-cart {
     position: relative;
@@ -131,7 +148,7 @@ img {
     color: white;
     text-align: center;
 }
-.header-top-btn {
+.header-order {
     float: right;
     width: 150px;
     padding-top: 11px;
@@ -148,22 +165,7 @@ img {
     background-color: #161d29;
     color: #babbbd;
 }
-.bookmarks:before {
-    position: absolute;
-    content: "";
-    width: 14px;
-    height: 16px;
-    top: 12px;
-    left: 16px;
-    background: transparent url("../img/icon-bookmark.png") no-repeat;
-    opacity: 0.3;
-}
-.bookmarks:hover:before {
-    opacity: 1;
-}
-.bookmarks:active:before {
-    opacity: 0.5;
-}
+
 .header-cart:before {
     position: absolute;
     content: "";
@@ -181,10 +183,10 @@ img {
     opacity: 0.5;
 }
 
-.cart-block .header-top-btn:hover {
+.cart-block .header-order:hover {
     background-color: #5fbb2d;
 }
-.cart-block .header-top-btn:active {
+.cart-block .header-order:active {
     background-color: #518534;
     color: #b7c9af;
 }
@@ -728,7 +730,7 @@ ul {
     border-top-color: #ee3643;
 }
 .catalog-cards {
-
+    position: relative;
 }
 .catalog-item {
     display: inline-block;
@@ -1119,10 +1121,26 @@ ul {
     padding-bottom: 7px;
     border-bottom: 3px solid #367315;
 }
+.item-buy:hover {
+    background-color: #5fbb2d;
+    border: 3px solid #5fbb2d;
+    border-bottom: 3px solid #367315;
+}
+.item-buy:active {
+    background-color: #518534;
+    border: 3px solid #518534;
+}
 .item-notes{
     margin-bottom: 0;
     background-color: white;
     color: black;
+}
+.item-notes:hover {
+    border: 3px solid #32425c;
+}
+.item-notes:active {
+    border: 3px solid #c1c6ce;
+    color: #d6d8dc;
 }
 .item-promo-block b {
     display: block;
@@ -1414,6 +1432,12 @@ b + .promo-block-price {
     text-decoration: none;
     border-radius: 3px;
 }
+.red-button:hover {
+    background-color: #ca2c37;
+}
+.red-button:active {
+    background-color: #ba2732;
+}
 .contacts .red-button {
     margin-top: 42px;
 }
@@ -1421,11 +1445,13 @@ b + .promo-block-price {
     float: right;
     width: 300px;
 }
-.map {
+.small-map {
     display: block;
     margin-top: 25px;
 }
+
 .map-modal-window {
+    display: none;
     position: absolute;
     z-index: 100;
     top: -50px;
@@ -1434,16 +1460,153 @@ b + .promo-block-price {
 .map-window {
     position: relative;
 }
-.map-modal-close {
+.modal-close {
     position: absolute;
     top: 10px;
     right: -30px;
+    padding: 0;
+    margin: 0;
     font-size: 21px;
     background-color: transparent;
     border: none;
     color: #ee3643;
     cursor: pointer;
     z-index: 1000;
+}
+.writeus-modal-window {
+    position: absolute;
+    display: none;
+    width: 620px;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    z-index: 100;
+}
+.writeus-modal-window:before,
+.incart-modal-window:before {
+    display: block;
+    height: 7px;
+    content: "";
+    background-color: #ee3643;
+}
+.writeus-modal-window .modal-close,
+.incart-modal-window .modal-close {
+    right: 9px;
+}
+.writeus-modal-window fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+.relative-block {
+    position: relative;
+}
+.writeus-window-container {
+    padding-top: 48px;
+    padding-bottom: 38px;
+    padding-left: 80px;
+    padding-right: 80px;
+    font-size: 0;
+    line-height: 0;
+    background-color: white;
+}
+.writeus-submit-conrainer {
+    padding-top: 38px;
+    padding-bottom: 38px;
+    padding-left: 80px;
+    padding-right: 80px;
+    background-color: #f1f1f1;
+}
+.writeus-submit-conrainer input[type="submit"] {
+    width: 460px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #ee3643;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.writeus-submit-conrainer input[type="submit"]:hover {
+    background-color: #ca2c37;
+}
+.writeus-submit-conrainer input[type="submit"]:active {
+    background-color: #ba2732;
+}
+.writeus-modal-window input {
+    padding: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    border: 2px solid #d7dcde;
+    border-radius: 3px;
+    vertical-align: top;
+}
+.writeus-modal-window input[name="client-name"],
+.writeus-modal-window input[name="client-email"] {
+    width: 196px;
+}
+.writeus-modal-window textarea[name="client-message"] {
+    width: 436px;
+    height: 90px;
+    padding: 10px;
+    font-size: 13px;
+    line-height: 18px;
+    border: 2px solid #d7dcde;
+    vertical-align: top;
+}
+.writeus-modal-window input[name="client-name"] {
+    margin-right: 20px;
+}
+.writeus-modal-window label {
+    display: inline-block;
+    width: 220px;
+    margin-bottom: 13px;
+    vertical-align: top;
+    font-size: 18px;
+    line-height: 18px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+}
+.writeus-modal-window label[for="client-name"] {
+    margin-right: 20px;
+}
+.writeus-modal-window label[for="client-message"] {
+    margin-top: 22px;
+}
+.incart-modal-window {
+    position: absolute;
+    #display: none;
+    width: 620px;
+    top: 110px;
+    left: 50%;
+    transform: translateX(-50%);
+    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    z-index: 100;
+}
+.incart-result {
+    position: relative;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 180px;
+    padding-right: 80px;
+    background-color: white;
+}
+.incart-result span {
+    font-size: 30px;
+    line-height: 18px;
+    font-family: 'Cuprum', 'Tahoma', sans-serif;
+}
+.incart-result span:before {
+    position: absolute;
+    content:"";
+    background: url("../img/icon-success.png");
+    width: 66px;
+    height: 66px;
+    top: 25px;
+    left: 80px;
 }
 .footer-block-top {
     background-color: #32425c;
@@ -1638,4 +1801,7 @@ b + .promo-block-price {
     line-height: 18px;
     font-family: 'Cuprum', 'Tahoma', sans-serif;
     text-align: center;
+}
+.modal-show {
+    display: block;
 }
