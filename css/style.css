@@ -1550,6 +1550,9 @@ b + .promo-block-price {
     z-index: 100;
     top: -50px;
     left: 10px;
+    background: url("../img/big-map.jpg") no-repeat;
+    width: 970px;
+    height: 476px;
 }
 .map-window {
     position: relative;
