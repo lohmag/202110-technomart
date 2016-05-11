@@ -80,7 +80,7 @@ img {
     line-height: 18px;
     font-family: 'Cuprum', 'Tahoma', sans-serif;
     font-style: normal;
-    background: transparent url("../img/.icon-search-opacity30.png") 18px 10px no-repeat;
+    background: transparent url("../img/icon-search-opacity30.png") 18px 10px no-repeat;
     background-color: #293449;
     color: white;
     border: none;
@@ -90,17 +90,17 @@ img {
 .search input:-moz-placeholder           {color: white;}/* Firefox 18- */
 .search input:-ms-input-placeholder      {color: white;}
 
-.search input:focus::-webkit-input-placeholder {color: transparent}
-.search input:focus::-moz-placeholder          {color: transparent}
-.search input:focus:-moz-placeholder           {color: transparent}
-.search input:focus:-ms-input-placeholder      {color: transparent}
+.search input:focus::-webkit-input-placeholder {color: transparent;}
+.search input:focus::-moz-placeholder          {color: transparent;}
+.search input:focus:-moz-placeholder           {color: transparent;}
+.search input:focus:-ms-input-placeholder      {color: transparent;}
 
 .search input:hover {
-    background: transparent url("../img/.icon-search-opacity100.png") 18px 10px no-repeat;
+    background: transparent url("../img/icon-search-opacity100.png") 18px 10px no-repeat;
     background-color: #212a3a;
 }
 .search input:focus {
-    background: transparent url("../img/.icon-search-red.png") 18px 10px no-repeat;
+    background: transparent url("../img/icon-search-red.png") 18px 10px no-repeat;
     background-color: white;
     color: black;
 }
@@ -561,7 +561,7 @@ ul {
 }
 .filter-form-selector legend {
     margin-bottom: 15px;
-    font-size: 13px;
+    font-size: 17px;
     line-height: 30px;
     font-weight: bold;
     text-transform: uppercase;
@@ -847,6 +847,7 @@ ul {
     font-size: 14px;
     line-height: 18px;
     border-radius: 4px;
+    text-transform: uppercase;
 }
 .promo-btn:hover {
     background-color: rgba(0,0,0,0.2);
@@ -1070,7 +1071,6 @@ ul {
     position: relative;
     float: left;
     width: 186px;
-    #min-height: 320px;
     padding: 20px 16px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1088,7 +1088,18 @@ ul {
     overflow: hidden;
     z-index: 20;
 }
-.item-promo-block .flag-new {
+.flag-new {
+    content:"";
+}
+.item-promo-block .flag-new:after {
+    position: absolute;
+    top: -1px;
+    right: -1px;
+    width: 60px;
+    height: 60px;
+    overflow: hidden;
+    z-index: 20;
+    content: "";
     background: url(../img/new-flag.png) no-repeat;
 }
 .promo-img {
