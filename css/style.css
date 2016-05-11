@@ -259,7 +259,7 @@ img {
     width: 280px;
     color: black;
 }
-.lk-in {
+.acoount-in {
     position: relative;
     float: left;
     width: 45px;
@@ -271,7 +271,7 @@ img {
     text-align: center;
     font-size: 21px;
 }
-.lk-in:before {
+.acoount-in:before {
     position: absolute;
     content: "";
     width: 20px;
@@ -282,19 +282,19 @@ img {
     background-position: -30px -1727px;
     opacity: 0.3;
 }
-.lk-in:hover {
+.acoount-in:hover {
     color: #ee3643;
 }
-.lk-in:hover:before {
+.acoount-in:hover:before {
     opacity: 1;
 }
-.lk-in:active {
+.acoount-in:active {
     color: #cacaca;
 }
-.lk-in:active:before {
+.acoount-in:active:before {
     opacity: 0.3;
 }
-.lk-reg {
+.account-reg {
     float: right;
     width: 100px;
     padding: 10px 25px;
@@ -304,10 +304,10 @@ img {
     text-align: center;
     font-size: 21px;
 }
-.lk-reg:hover {
+.account-reg:hover {
     color: #ee3643;
 }
-.lk-reg:active {
+.account-reg:active {
     color: #cacaca;
 }
 .header-user {
@@ -656,6 +656,7 @@ ul {
 }
 
 .show-button {
+    width: 120px;
     padding: 10px 33px;
     margin-top : 30px;
     font-size: 13px;
@@ -1014,6 +1015,7 @@ ul {
 }
 .popular-header h2 {
     float: left;
+    width: 540px;
     margin: 0;
     font-size: 30px;
     line-height: 30px;
@@ -1414,17 +1416,17 @@ b + .promo-block-price {
 .services-delivery {
     background: transparent url("../img/dostavka_truck.png") no-repeat;
     background-position: 100% 0;
-    height: 261px;
+    min-height: 261px;
 }
 .services-garanty {
     background: transparent url("../img/guarantie.png") no-repeat;
     background-position: 100% 0;
-    height: 283px;
+    min-height: 261px;
 }
 .services-credit {
     background: transparent url("../img/credit-logo.png") no-repeat;
     background-position: 100% 0;
-    height: 285px;
+    min-height: 261px;
 }
 .services-description a {
     display: inline-block;
@@ -1748,6 +1750,7 @@ b + .promo-block-price {
     width: 590px;
     float: right;
     font-size: 0;
+    overflow: hidden;
 }
 .footer-top {
     display: flex;
