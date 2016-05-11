@@ -122,7 +122,6 @@ img {
     text-decoration: none;
     color: white;
     text-align: center;
-    #background-color: #ee3643;
 }
 .bookmarks:before {
     position: absolute;
@@ -317,7 +316,9 @@ img {
 .login-name {
     position: relative;
     display: block;
-    padding: 9px 0px;
+    font-size: 0;
+    line-height: 0;
+    padding: 12px 0px;
     padding-left: 50px;
     background-color: white;
 }
@@ -326,6 +327,14 @@ img {
     font-size: 21px;
     font-style: normal;
     color: black;
+    overflow: hidden;
+}
+.header-login-name {
+    display: inline-block;
+    width: 200px;
+    font-size: 18px;
+    line-height: 21px;
+    overflow: hidden;
 }
 .header-login-name:before {
     position: absolute;
@@ -371,7 +380,7 @@ img {
     padding-top: 10px;
     padding-left: 17px;
 }
-.lk-cat:before {
+.account-cat:before {
     position: absolute;
     content: "";
     background: url("../img/spritesheet.png") no-repeat;
@@ -474,6 +483,7 @@ ul {
 .filter-form {
     float: left;
     width: 220px;
+    overflow: hidden;
 }
 .filter-form-h {
     display: block;
@@ -557,9 +567,11 @@ ul {
 }
 .price-filter label:last-child {
     float: right;
+    width: 220px;
 }
 
 .filter-form-selector {
+    width: 220px;
     margin: 0;
     margin-bottom: 10px;
     padding: 0;
@@ -585,6 +597,7 @@ ul {
 }
 .login-checkbox {
     position: relative;
+    width: 200px;
     padding-left: 30px;
     padding-bottom: 20px;
     font-size: 15px;
@@ -962,12 +975,14 @@ ul {
     width: 100%;
     height: 100%;
     background: url("../img/slider_1.jpg") no-repeat;
+    background-color: black;
 }
 .slide:nth-child(2) {
     position: absolute;
     width: 100%;
     height: 100%;
     background: url("../img/slider_2.jpg") no-repeat;
+    background-color: black;
 }
 .slide h2 {
     padding: 0;
@@ -1218,6 +1233,7 @@ ul {
 }
 .price-deleted {
     display: block;
+    width: 186px;
     margin-bottom: 15px;
     text-decoration: line-through;
     text-align: center;
@@ -1225,6 +1241,7 @@ ul {
     line-height: 18px;
     font-weight: bold;
     color: #999999;
+    overflow: hidden;
 }
 .promo-block-price {
     position: relative;
@@ -1241,6 +1258,7 @@ ul {
     line-height: 18px;
     font-weight: bold;
     color: white;
+    white-space: nowrap;
 }
 .promo-block-price:after {
     position: absolute;
@@ -1335,7 +1353,7 @@ b + .promo-block-price {
     float: left;
     width: 240px;
     margin: 0;
-    margin-top: 66px;
+    margin-top: 20px;
 }
 .services-list li {
     list-style: none;
@@ -1384,8 +1402,10 @@ b + .promo-block-price {
     display: block
 }
 .services-description-block {
-    position: absolute;
+    #position: absolute;
     width: 620px;
+    margin-left: 240px;
+    margin-top: 50px;
     padding-left: 80px;
     top: 33px;
     right: 0;
@@ -1415,17 +1435,17 @@ b + .promo-block-price {
 }
 .services-delivery {
     background: transparent url("../img/dostavka_truck.png") no-repeat;
-    background-position: 100% 0;
+    background-position: 100% 50px;
     min-height: 261px;
 }
 .services-garanty {
     background: transparent url("../img/guarantie.png") no-repeat;
-    background-position: 100% 0;
+    background-position: 100% 50px;
     min-height: 261px;
 }
 .services-credit {
     background: transparent url("../img/credit-logo.png") no-repeat;
-    background-position: 100% 0;
+    background-position: 100% 50px;
     min-height: 261px;
 }
 .services-description a {
@@ -1720,7 +1740,6 @@ b + .promo-block-price {
 .logo-bottom {
     display: inline-block;
     width: 220px;
-    height: 100%;
     padding: 16px 0px;
     font-size: 30px;
     line-height: 30px;
@@ -1730,6 +1749,7 @@ b + .promo-block-price {
     text-decoration: none;
     color: white;
     text-align: center;
+    overflow: hidden;
 }
 .logo-bottom:hover {
     background-color: #ca2c37;
