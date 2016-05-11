@@ -1,0 +1,197 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-cart-logo {
+    width: 59px;
+    height: 72px;
+    background-position: -30px -30px;
+}
+
+.sprite-drel-logo {
+    width: 75px;
+    height: 61px;
+    background-position: -30px -162px;
+}
+
+.sprite-icon-backet {
+    width: 44px;
+    height: 65px;
+    background-position: -30px -283px;
+}
+
+.sprite-icon-basket {
+    width: 17px;
+    height: 16px;
+    background-position: -30px -408px;
+}
+
+.sprite-icon-bookmark {
+    width: 14px;
+    height: 16px;
+    background-position: -30px -484px;
+}
+
+.sprite-icon-cart {
+    width: 59px;
+    height: 72px;
+    background-position: -30px -560px;
+}
+
+.sprite-icon-check-off {
+    width: 23px;
+    height: 23px;
+    background-position: -30px -692px;
+}
+
+.sprite-icon-check-on {
+    width: 27px;
+    height: 23px;
+    background-position: -30px -775px;
+}
+
+.sprite-icon-deliver {
+    width: 78px;
+    height: 63px;
+    background-position: -30px -858px;
+}
+
+.sprite-icon-dot {
+    width: 4px;
+    height: 6px;
+    background-position: -30px -981px;
+}
+
+.sprite-icon-drel {
+    width: 75px;
+    height: 61px;
+    background-position: -30px -1047px;
+}
+
+.sprite-icon-fb {
+    width: 10px;
+    height: 18px;
+    background-position: -30px -1168px;
+}
+
+.sprite-icon-home {
+    width: 15px;
+    height: 12px;
+    background-position: -30px -1246px;
+}
+
+.sprite-icon-instagram {
+    width: 17px;
+    height: 17px;
+    background-position: -30px -1318px;
+}
+
+.sprite-icon-left {
+    width: 22px;
+    height: 40px;
+    background-position: -30px -1395px;
+}
+
+.sprite-icon-login {
+    width: 20px;
+    height: 18px;
+    background-position: -30px -1495px;
+}
+
+.sprite-icon-logout {
+    width: 21px;
+    height: 17px;
+    background-position: -30px -1573px;
+}
+
+.sprite-icon-pass {
+    width: 20px;
+    height: 17px;
+    background-position: -30px -1650px;
+}
+
+.sprite-icon-pass-hover {
+    width: 20px;
+    height: 17px;
+    background-position: -30px -1727px;
+}
+
+.sprite-icon-right {
+    width: 22px;
+    height: 40px;
+    background-position: -30px -1804px;
+}
+
+.sprite-icon-search {
+    width: 17px;
+    height: 17px;
+    background-position: -30px -1904px;
+}
+
+.sprite-icon-search-opacity100 {
+    width: 17px;
+    height: 17px;
+    background-position: -30px -1981px;
+}
+
+.sprite-icon-search-opacity30 {
+    width: 17px;
+    height: 17px;
+    background-position: -30px -2058px;
+}
+
+.sprite-icon-search-red {
+    width: 17px;
+    height: 17px;
+    background-position: -30px -2135px;
+}
+
+.sprite-icon-success {
+    width: 66px;
+    height: 66px;
+    background-position: -30px -2212px;
+}
+
+.sprite-icon-telephone {
+    width: 19px;
+    height: 19px;
+    background-position: -30px -2338px;
+}
+
+.sprite-icon-tractor {
+    width: 78px;
+    height: 62px;
+    background-position: -30px -2417px;
+}
+
+.sprite-icon-vk {
+    width: 20px;
+    height: 12px;
+    background-position: -30px -2539px;
+}
+
+.sprite-new-flag {
+    width: 60px;
+    height: 59px;
+    background-position: -30px -2611px;
+}
+
+.sprite-paint-logo {
+    width: 44px;
+    height: 65px;
+    background-position: -30px -2730px;
+}
+
+.sprite-tractor-logo {
+    width: 78px;
+    height: 62px;
+    background-position: -30px -2855px;
+}
+
+.sprite-truck-logo {
+    width: 78px;
+    height: 63px;
+    background-position: -30px -2977px;
+}
