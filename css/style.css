@@ -1103,9 +1103,13 @@ ul {
 .page-next {
     width: 140px;
 }
+.popular-items-promo {
+    font-size: 0;
+    line-height: 0;
+}
 .item-promo-block {
     position: relative;
-    float: left;
+    display: inline-block;
     width: 186px;
     padding: 20px 16px;
     margin-right: 20px;
@@ -1579,6 +1583,8 @@ b + .promo-block-price {
     transform: translateX(-50%);
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     z-index: 100;
+    animation-name: move;
+    animation-duration: 1s;
 }
 .writeus-modal-window:before,
 .incart-modal-window:before {
@@ -1682,6 +1688,13 @@ b + .promo-block-price {
     transform: translateX(-50%) translateY(-50%);
     box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
     z-index: 100;
+    animation-name: move;
+    animation-duration: 1s;
+}
+@keyframes move {
+    0% {
+        transform: translateX(-1000px);
+    }
 }
 .incart-result {
     position: relative;
@@ -1781,7 +1794,6 @@ b + .promo-block-price {
     flex-direction: row;
     -webkit-justify-content: flex-end;
     justify-content: flex-end;
-    float:right;
     width: 100%;
     margin: 0;
     margin-top: 36px;
