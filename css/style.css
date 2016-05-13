@@ -1406,7 +1406,6 @@ b + .promo-block-price {
     display: block
 }
 .services-description-block {
-    #position: absolute;
     width: 620px;
     margin-left: 240px;
     margin-top: 50px;
