@@ -69,6 +69,8 @@ img {
 }
 .search {
     float: left;
+
+
 }
 .search input {
     float: right;
@@ -85,6 +87,8 @@ img {
     background-color: #293449;
     color: white;
     border: none;
+    box-sizing: border-box;
+
 }
 .search input::-webkit-input-placeholder {color: white;}
 .search input::-moz-placeholder          {color: white;}/* Firefox 19+ */
@@ -331,6 +335,7 @@ img {
 }
 .header-login-name {
     display: inline-block;
+    vertical-align: top;
     width: 200px;
     font-size: 18px;
     line-height: 21px;
@@ -392,6 +397,7 @@ img {
 }
 .header-userinfo a {
     display: inline-block;
+    vertical-align: top;
     margin-right: 30px;
     font-size: 16px;
     line-height: 16px;
@@ -415,6 +421,7 @@ ul {
 }
 .main-navigation li {
     display: inline-block;
+    vertical-align: top;
     margin: 0;
     padding: 0;
     font-size: 17px;
@@ -444,6 +451,7 @@ ul {
 }
 .breadcrumbs li {
     display: inline-block;
+    vertical-align: top;
     font-size: 13px;
     line-height: 18px;
 }
@@ -458,6 +466,7 @@ ul {
 }
 .breadcrumbs a:after {
     display: inline-block;
+    vertical-align: top;
     content: "\203A";
     margin-left: 15px;
     font-size: 22px;
@@ -547,6 +556,7 @@ ul {
 }
 .price-filter input {
     display: inline-block;
+    vertical-align: top;
     margin: 0;
     margin-top: 10px;
     width: 95px;
@@ -694,6 +704,7 @@ ul {
 }
 .sort-rules span {
     display: inline-block;
+    vertical-align: top;
     width: 220px;
     margin-left: 10px;
     font-size: 13px;
@@ -701,6 +712,7 @@ ul {
 }
 .sort-by-price {
     display: inline-block;
+    vertical-align: top;
     margin-left: 45px;
     font-size: 13px;
     line-height: 18px;
@@ -711,6 +723,7 @@ ul {
 }
 .sort-by-type {
     display: inline-block;
+    vertical-align: top;
     margin-left: 45px;
     font-size: 13px;
     line-height: 18px;
@@ -721,6 +734,7 @@ ul {
 }
 .sort-by-func {
     display: inline-block;
+    vertical-align: top;
     margin-left: 45px;
     font-size: 13px;
     line-height: 18px;
@@ -742,6 +756,7 @@ ul {
 
 .price-ascend {
     display: inline-block;
+    vertical-align: top;
     margin-left: 40px;
     width: 0;
     height: 0;;
@@ -756,6 +771,7 @@ ul {
 }
 .price-discend {
     display: inline-block;
+    vertical-align: top;
     margin-left: 20px;
     width: 0;
     height: 0;
@@ -1004,6 +1020,7 @@ ul {
 }
 .slide a {
     display: inline-block;
+    vertical-align: top;
     margin-top: 120px;
     padding: 10px 45px;
     font-size: 14px;
@@ -1077,6 +1094,7 @@ ul {
 
 .pagination a {
     display: inline-block;
+    vertical-align: top;
     min-width: 20px;
     padding: 9px 9px;
     margin-right: 10px;
@@ -1117,7 +1135,7 @@ ul {
     border: 1px solid #e5e5e5;
 }
 .item-promo-block:hover {
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
 }
 .item-promo-block .flag {
     position: absolute;
@@ -1282,6 +1300,7 @@ b + .promo-block-price {
 }
 .manufacturer-promo-block {
     display: inline-block;
+    vertical-align: top;
     width: 218px;
     margin-right: 20px;
     margin-bottom: 20px;
@@ -1298,7 +1317,7 @@ b + .promo-block-price {
     min-height: 143px;
 }
 .manufacturer-promo-block a:hover {
-    box-shadow: 0px 8px 28px 4px #a9adb5;
+    box-shadow: 0 8px 28px 4px #a9adb5;
 }
 .manufacturer-promo-block a:active {
     box-shadow: 1px 4px 11px 4px #a9adb5;
@@ -1381,17 +1400,9 @@ b + .promo-block-price {
     background-color: #293449;
     border-bottom: 1px solid #293449;
 }
-#selector-1:checked ~ ul label[for="selector-1"]  {
-    background-color: white;
-    color: #32425c;
-    border-bottom: 1px solid white;
-}
-#selector-2:checked ~ ul label[for="selector-2"]  {
-    background-color: white;
-    color: #32425c;
-    border-bottom: 1px solid white;
-}
-#selector-3:checked ~ ul label[for="selector-3"]  {
+#selector-1:checked ~ ul label[for="selector-1"],
+#selector-2:checked ~ ul label[for="selector-2"],
+#selector-3:checked ~ ul label[for="selector-3"] {
     background-color: white;
     color: #32425c;
     border-bottom: 1px solid white;
@@ -1410,9 +1421,7 @@ b + .promo-block-price {
     margin-left: 240px;
     margin-top: 50px;
     padding-left: 80px;
-    top: 33px;
-    right: 0;
-    box-shadow: -14px 0px 20px -15px rgba(0,0,0,0.7);
+    box-shadow: -14px 0 20px -15px rgba(0,0,0,0.7);
 
 }
 .services-description {
@@ -1420,6 +1429,7 @@ b + .promo-block-price {
 }
 .services-description h2 {
     display: inline-block;
+    vertical-align: top;
     margin: 0;
     margin-top: 35px;
     font-size: 36px;
@@ -1453,6 +1463,7 @@ b + .promo-block-price {
 }
 .services-description a {
     display: inline-block;
+    vertical-align: top;
     margin-top: 35px;
     padding: 10px 40px;
     text-align: center;
@@ -1517,6 +1528,7 @@ b + .promo-block-price {
 }
 .red-button {
     display: inline-block;
+    vertical-align: top;
     margin-top: 35px;
     padding: 10px 40px;
     text-align: center;
@@ -1581,7 +1593,7 @@ b + .promo-block-price {
     top: 110px;
     left: 50%;
     transform: translateX(-50%);
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
     z-index: 100;
     animation-name: move;
     animation-duration: 1s;
@@ -1666,9 +1678,9 @@ b + .promo-block-price {
 }
 .writeus-modal-window label {
     display: inline-block;
+    vertical-align: top;
     width: 220px;
     margin-bottom: 13px;
-    vertical-align: top;
     font-size: 18px;
     line-height: 18px;
     font-family: 'Cuprum', 'Tahoma', sans-serif;
@@ -1686,7 +1698,7 @@ b + .promo-block-price {
     top: 50%;
     left: 50%;
     transform: translateX(-50%) translateY(-50%);
-    box-shadow: 0px 0px 30px 0px rgba(0,0,0,0.75);
+    box-shadow: 0 0 30px 0 rgba(0,0,0,0.75);
     z-index: 100;
     animation-name: move;
     animation-duration: 1s;
@@ -1745,6 +1757,7 @@ b + .promo-block-price {
 }
 .footer-address {
     display: inline-block;
+    vertical-align: top;
     width: 340px;
     margin-right: 10px;
     font-style: normal;
@@ -1755,8 +1768,9 @@ b + .promo-block-price {
 }
 .logo-bottom {
     display: inline-block;
+    vertical-align: top;
     width: 220px;
-    padding: 16px 0px;
+    padding: 16px 0;
     font-size: 30px;
     line-height: 30px;
     background-color: #ee3643;
@@ -1829,7 +1843,7 @@ b + .promo-block-price {
     margin-left: 60px;
 }
 .footer-menu li:first-child {
-    margin-left: 0px;
+    margin-left: 0;
 
 }
 .footer-menu a {
@@ -1862,6 +1876,7 @@ b + .promo-block-price {
 .social a {
     position: relative;
     display: inline-block;
+    vertical-align: top;
     margin-right: 3px;
     width: 40px;
     height: 40px;
