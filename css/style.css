@@ -414,7 +414,7 @@ img {
     background-color: #32425c;
     font-size: 0;
     line-height: 0;
-    box-shadow: 0 5px #293449;
+    border-bottom: 5px solid #293449;
 }
 ul {
     margin: 0;
