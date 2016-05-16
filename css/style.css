@@ -410,9 +410,10 @@ img {
     color: #cacaca;
 }
 .main-navigation {
-    padding: 0 26px;
+    padding: 0 25px;
     background-color: #32425c;
     font-size: 0;
+    line-height: 0;
     box-shadow: 0 5px #293449;
 }
 ul {
