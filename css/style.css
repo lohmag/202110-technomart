@@ -48,8 +48,7 @@ img {
 .logo {
     float: left;
     width: 220px;
-    height: 100%;
-    padding: 8px 0px;
+    padding: 9px 0;
     font-size: 24px;
     line-height: 24px;
     background-color: #ee3643;
@@ -120,8 +119,8 @@ img {
     position: relative;
     float: left;
     width: 112px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 38px;
     text-decoration: none;
     color: white;
@@ -148,8 +147,8 @@ img {
     position: relative;
     float: left;
     width: 112px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     padding-left: 38px;
     text-decoration: none;
     color: white;
@@ -161,8 +160,8 @@ img {
 .header-order {
     float: right;
     width: 150px;
-    padding-top: 11px;
-    padding-bottom: 11px;
+    padding-top: 12px;
+    padding-bottom: 12px;
     background-color: #63a63e;
     text-decoration: none;
     color: white;
@@ -203,12 +202,13 @@ img {
 }
 .header-middle-content {
     background-color: #f1f5f7;
-    padding-bottom: 65px;
+    padding-bottom: 60px;
 }
 .header-middle {
     padding-top: 45px;
     padding-bottom: 45px;
     padding-left: 50px;
+    min-height: 80px;
 }
 .header-middle h1 {
     float: left;
